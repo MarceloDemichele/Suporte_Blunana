@@ -1,0 +1,346 @@
+[
+  {
+    "menu": "",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio",
+    "titulo": "Blunana",
+    "h1": "Monitoring Dashboard",
+    "h2": "Quick access",
+    "screenshot": "outputs/screenshots/blunana/dev/dev-blunana-ai-juridico-studio.png"
+  },
+  {
+    "menu": "Branches",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/branches",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Branch Management",
+    "screenshot": "outputs/screenshots/blunana/dev/branches.png"
+  },
+  {
+    "menu": "Projects",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/projects",
+    "titulo": "Blunana",
+    "h1": "Projetos em andamento",
+    "h2": "Projetos",
+    "screenshot": "outputs/screenshots/blunana/dev/projects.png"
+  },
+  {
+    "menu": "Tasks",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/tasks",
+    "titulo": "Blunana",
+    "h1": "Nenhuma tarefa encontrada",
+    "h2": "Tarefas",
+    "screenshot": "outputs/screenshots/blunana/dev/tasks.png"
+  },
+  {
+    "menu": "Database",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/database",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Features",
+    "screenshot": "outputs/screenshots/blunana/dev/database.png"
+  },
+  {
+    "menu": "User Defined Functions",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/udf",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "UDF",
+    "screenshot": "outputs/screenshots/blunana/dev/user-defined-functions.png"
+  },
+  {
+    "menu": "Builder",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/builder",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Builder",
+    "screenshot": "outputs/screenshots/blunana/dev/builder.png"
+  },
+  {
+    "menu": "Atividade dos usuários",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/report/USER_ACTIVITY",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Atividade dos usuários",
+    "screenshot": "outputs/screenshots/blunana/dev/atividade-dos-usu-rios.png"
+  },
+  {
+    "menu": "Erros",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/report/USER_ERROR",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Erros",
+    "screenshot": "outputs/screenshots/blunana/dev/erros.png"
+  },
+  {
+    "menu": "Log - User Defined Api",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/report/API_LOG",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Log - User Defined Api",
+    "screenshot": "outputs/screenshots/blunana/dev/log-user-defined-api.png"
+  },
+  {
+    "menu": "Manual EPL",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/report/MANUALEPLDOC",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Manual EPL",
+    "screenshot": "outputs/screenshots/blunana/dev/manual-epl.png"
+  },
+  {
+    "menu": "Users",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/users",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Users",
+    "screenshot": "outputs/screenshots/blunana/dev/users.png"
+  },
+  {
+    "menu": "Groups",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/groups",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Groups",
+    "screenshot": "outputs/screenshots/blunana/dev/groups.png"
+  },
+  {
+    "menu": "Policy",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/policy",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Policy",
+    "screenshot": "outputs/screenshots/blunana/dev/policy.png"
+  },
+  {
+    "menu": "Logs",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/log",
+    "titulo": "Blunana",
+    "h1": "Studio request monitoring",
+    "h2": "System logs",
+    "screenshot": "outputs/screenshots/blunana/dev/logs.png"
+  },
+  {
+    "menu": "Settings",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/settings/menuConfig",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Menu Configuration",
+    "screenshot": "outputs/screenshots/blunana/dev/settings.png"
+  },
+  {
+    "menu": "Adicionar Prazos",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/adicionar_prazos",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/adicionar-prazos.png"
+  },
+  {
+    "menu": "Agenda de prazos",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/agenda_nova",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/agenda-de-prazos.png"
+  },
+  {
+    "menu": "Ateste",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/ateste",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/ateste.png"
+  },
+  {
+    "menu": "Audiencia",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/audiencia",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/audiencia.png"
+  },
+  {
+    "menu": "Audiencia Multirao",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/audiencia_multirao",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/audiencia-multirao.png"
+  },
+  {
+    "menu": "Cobrança",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/cobranca",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/cobran-a.png"
+  },
+  {
+    "menu": "Configuração de ateste",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_ateste",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/configura-o-de-ateste.png"
+  },
+  {
+    "menu": "Configuração de negociador",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_negociador",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Configuração de Negociador",
+    "screenshot": "outputs/screenshots/blunana/dev/configura-o-de-negociador.png"
+  },
+  {
+    "menu": "Configuração de palavra",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_palavra",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/configura-o-de-palavra.png"
+  },
+  {
+    "menu": "Configuração de prazo",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_prazo",
+    "titulo": "Blunana",
+    "h1": "Configuração de prazos",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/configura-o-de-prazo.png"
+  },
+  {
+    "menu": "Configuração de processos",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_processos",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/configura-o-de-processos.png"
+  },
+  {
+    "menu": "Configuração de publicações",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_publicacoes",
+    "titulo": "Blunana",
+    "h1": "Configuração de publicações",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/configura-o-de-publica-es.png"
+  },
+  {
+    "menu": "Configuração parâmetros de cobrança",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_parametros_de_cobranca",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/configura-o-par-metros-de-cobran-a.png"
+  },
+  {
+    "menu": "Configuração Usuário",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_usuario",
+    "titulo": "Blunana",
+    "h1": "Configuração de usuários",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/configura-o-usu-rio.png"
+  },
+  {
+    "menu": "consulta rdstation",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/oaut_rdstation",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "RD Station",
+    "screenshot": "outputs/screenshots/blunana/dev/consulta-rdstation.png"
+  },
+  {
+    "menu": "dashboard logs",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/dashboard_logs",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/dashboard-logs.png"
+  },
+  {
+    "menu": "Detalhes do processo",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/detalhes_do_processo",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/detalhes-do-processo.png"
+  },
+  {
+    "menu": "Editar Audiencia",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/editar_audiencia",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/editar-audiencia.png"
+  },
+  {
+    "menu": "Editar Prazo",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/editar_prazo",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/editar-prazo.png"
+  },
+  {
+    "menu": "Home",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/home",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/home.png"
+  },
+  {
+    "menu": "oaut rdstation",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/oaut_rdstation",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "RD Station",
+    "screenshot": "outputs/screenshots/blunana/dev/oaut-rdstation.png"
+  },
+  {
+    "menu": "Prazos",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/novos_prazos",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/prazos.png"
+  },
+  {
+    "menu": "Processos",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/processos1",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/processos.png"
+  },
+  {
+    "menu": "Publicações",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/publicacoes",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/publica-es.png"
+  },
+  {
+    "menu": "Robo Custas",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/robo_custas",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/robo-custas.png"
+  },
+  {
+    "menu": "Robo Custas Monitoramento",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/robo_custas_monitoramento",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "",
+    "screenshot": "outputs/screenshots/blunana/dev/robo-custas-monitoramento.png"
+  },
+  {
+    "menu": "teste upload de imagem",
+    "url": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/teste_upload_de_imagem",
+    "titulo": "Blunana",
+    "h1": "",
+    "h2": "Upload de imagem",
+    "screenshot": "outputs/screenshots/blunana/dev/teste-upload-de-imagem.png"
+  }
+]

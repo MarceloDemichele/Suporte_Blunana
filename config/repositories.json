@@ -1,0 +1,23 @@
+{
+  "repositoriesRoot": "repositories",
+  "docsRoot": "docs",
+  "repositories": [
+    {
+      "name": "blueprojects",
+      "url": "https://github.com/org/repositorio.git",
+      "branch": "main",
+      "enabled": false
+    }
+  ],
+  "excludeDirectories": [
+    ".git",
+    "node_modules",
+    "bin",
+    "obj",
+    "dist",
+    "build",
+    ".next",
+    ".nuxt",
+    "coverage"
+  ]
+}

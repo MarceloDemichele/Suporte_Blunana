@@ -1,0 +1,338 @@
+[
+  {
+    "texto": "",
+    "href": "",
+    "ariaLabel": "Hide menu",
+    "title": ""
+  },
+  {
+    "texto": "",
+    "href": "",
+    "ariaLabel": "Hide menu",
+    "title": ""
+  },
+  {
+    "texto": "",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio",
+    "ariaLabel": "Home",
+    "title": ""
+  },
+  {
+    "texto": "",
+    "href": "",
+    "ariaLabel": "Change language",
+    "title": ""
+  },
+  {
+    "texto": "",
+    "href": "",
+    "ariaLabel": "Change theme",
+    "title": ""
+  },
+  {
+    "texto": "",
+    "href": "",
+    "ariaLabel": "Enter fullscreen",
+    "title": ""
+  },
+  {
+    "texto": "G",
+    "href": "",
+    "ariaLabel": "Open user data",
+    "title": ""
+  },
+  {
+    "texto": "Home",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Branches",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/branches",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Projects",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/projects",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Tasks",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/tasks",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Database",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/database",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "User Defined Functions",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/udf",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Builder",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/builder",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Atividade dos usuários",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/report/USER_ACTIVITY",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Erros",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/report/USER_ERROR",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Log - User Defined Api",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/report/API_LOG",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Manual EPL",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/report/MANUALEPLDOC",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Users",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/users",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Groups",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/groups",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Policy",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/policy",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Logs",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/log",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Settings",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/settings",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Adicionar Prazos",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/adicionar_prazos",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Agenda de prazos",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/agenda_nova",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Ateste",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/ateste",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Audiencia",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/audiencia",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Audiencia Multirao",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/audiencia_multirao",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Cobrança",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/cobranca",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Configuração de ateste",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_ateste",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Configuração de negociador",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_negociador",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Configuração de palavra",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_palavra",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Configuração de prazo",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_prazo",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Configuração de processos",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_processos",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Configuração de publicações",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_de_publicacoes",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Configuração parâmetros de cobrança",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_parametros_de_cobranca",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Configuração Usuário",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/configuracao_usuario",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "consulta rdstation",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/consulta_rdstation",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "dashboard logs",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/dashboard_logs",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Detalhes do processo",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/detalhes_do_processo",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Editar Audiencia",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/editar_audiencia",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Editar Prazo",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/editar_prazo",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Home",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/home",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "oaut rdstation",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/oaut_rdstation",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Prazos",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/novos_prazos",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Processos",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/processos1",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Publicações",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/publicacoes",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Robo Custas",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/robo_custas",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Robo Custas Monitoramento",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/robo_custas_monitoramento",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "teste upload de imagem",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/custom/teste_upload_de_imagem",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "Refresh",
+    "href": "",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "DatabaseTables, columns, and queries structure.",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/database",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "BuilderApplication screens construction and maintenance.",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/builder",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "User Defined FunctionsUDF catalog, validation, and publishing.",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/udf",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "SettingsVisual identity and configuration settings.",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/settings",
+    "ariaLabel": "",
+    "title": ""
+  },
+  {
+    "texto": "LogsObservability for requests, timings, and system errors.",
+    "href": "https://epm.blueprojects.com.br/@rocha_juridico/studio/log",
+    "ariaLabel": "",
+    "title": ""
+  }
+]

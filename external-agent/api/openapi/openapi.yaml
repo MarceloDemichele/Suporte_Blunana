@@ -1,0 +1,67 @@
+openapi: 3.1.0
+
+info:
+  title: Blunana External Agent
+  version: "1.0.0"
+  description: |
+    Agente externo responsável por consultar engenharia reversa,
+    documentação, knowledge base, tickets e suporte do projeto.
+
+servers:
+  - url: https://people-setting-touring-michigan.trycloudflare.com
+
+paths:
+
+  /health:
+    get:
+      operationId: health
+      summary: Status da API
+      responses:
+        "200":
+          description: OK
+
+  /sources:
+    get:
+      operationId: sources
+      summary: Lista todas as fontes disponíveis
+      responses:
+        "200":
+          description: Fontes
+
+  /search:
+    post:
+      operationId: search
+      summary: Pesquisa documentos
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - query
+              properties:
+                query:
+                  type: string
+      responses:
+        "200":
+          description: Pesquisa
+
+  /ask:
+    post:
+      operationId: ask
+      summary: Consulta completa ao agente
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - question
+              properties:
+                question:
+                  type: string
+      responses:
+        "200":
+          description: Resposta

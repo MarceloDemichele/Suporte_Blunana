@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Robo-CEF - Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Robo-CEF/bin/Debug/net8.0/Robo-CEF.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Robo-CEF",
+            "console": "integratedTerminal",
+            "stopAtEntry": false,
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        {
+            "name": "Robo-CEF - Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
