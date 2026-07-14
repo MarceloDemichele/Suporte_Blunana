@@ -58,8 +58,8 @@
 - `docs/tecnica/configuracoes.md`
 - `docs/tecnica/arquitetura.md`
 - `docs/changelog.md`
-- `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md`
-- `docs/robo-cef-matriz-rastreabilidade.md`
+- `engenharia-reversa/blunana/README.md`
+- `docs/reverse-engineering-blunana-prompt.md`
 - `.memory/contexto.md`
 - `.memory/historico.md`
 - `.memory/decisoes.md`
@@ -94,8 +94,8 @@
 - `docs/tecnica/arquitetura.md`
 - `docs/tecnica/configuracoes.md`
 - `docs/changelog.md`
-- `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md`
-- `docs/robo-cef-matriz-rastreabilidade.md`
+- `engenharia-reversa/blunana/README.md`
+- `docs/reverse-engineering-blunana-prompt.md`
 - `.memory/contexto.md`
 - `.memory/historico.md`
 - `.memory/decisoes.md`
@@ -131,8 +131,8 @@
 - `docs/tecnica/configuracoes.md`
 - `docs/tecnica/arquitetura.md`
 - `docs/changelog.md`
-- `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md`
-- `docs/robo-cef-matriz-rastreabilidade.md`
+- `engenharia-reversa/blunana/README.md`
+- `docs/reverse-engineering-blunana-prompt.md`
 - `.memory/contexto.md`
 - `.memory/historico.md`
 - `.memory/decisoes.md`
@@ -166,8 +166,8 @@
 - `docs/tecnica/arquitetura.md`
 - `docs/tecnica/configuracoes.md`
 - `docs/changelog.md`
-- `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md`
-- `docs/robo-cef-matriz-rastreabilidade.md`
+- `engenharia-reversa/blunana/README.md`
+- `docs/reverse-engineering-blunana-prompt.md`
 - `.memory/contexto.md`
 - `.memory/historico.md`
 - `.memory/decisoes.md`
@@ -204,8 +204,8 @@
 - `docs/tecnica/arquitetura.md`
 - `docs/tecnica/configuracoes.md`
 - `docs/changelog.md`
-- `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md`
-- `docs/robo-cef-matriz-rastreabilidade.md`
+- `engenharia-reversa/blunana/README.md`
+- `docs/reverse-engineering-blunana-prompt.md`
 - `.memory/contexto.md`
 - `.memory/historico.md`
 - `.memory/decisoes.md`
@@ -229,7 +229,7 @@
 
 ## Conhecimento atualizado
 
-- Engenharia reversa do robo CEF foi movida para `engenharia-reversa/robo-cef/`.
+- A engenharia reversa de Blunana passou a ser consolidada em `engenharia-reversa/blunana/`.
 - Engenharia reversa Blunana foi movida para `engenharia-reversa/blunana/`.
 - Artefatos historicos Blunana foram migrados para `outputs/json/blunana/dev/`, `outputs/screenshots/blunana/dev/`, `outputs/screenshots/blunana/prod/` e `outputs/relatorios/blunana/dev/`.
 - `config/paths.ts` agora separa JSON, screenshots, logs, relatorios e temporarios.
@@ -244,8 +244,8 @@
 - `docs/tecnica/organizacao-artefatos.md`
 - `docs/tecnica/configuracoes.md`
 - `prompts/07-aprendizado-continuo.md`
-- `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md`
-- `docs/robo-cef-matriz-rastreabilidade.md`
+- `engenharia-reversa/blunana/README.md`
+- `docs/reverse-engineering-blunana-prompt.md`
 
 ## Pendencias encontradas
 
@@ -262,7 +262,7 @@
 
 - Os artefatos passaram a ser separados por dominio e ambiente.
 - Blunana deve usar `outputs/{tipo}/blunana/{dev,hml,prod}` para artefatos e `engenharia-reversa/blunana/` para documentacao consolidada.
-- Robos devem usar `outputs/{tipo}/robos/{dev,hml,prod}` para artefatos e `engenharia-reversa/robo-cef/` para documentacao consolidada do robo CEF.
+- Os artefatos de suporte devem ficar em `outputs/{tipo}/` e a documentação consolidada em `engenharia-reversa/blunana/`.
 - `config/paths.ts` usa `OUTPUT_DOMAIN` com padrao `blunana` e `APP_ENV` para compor `outputs/{tipo}/{OUTPUT_DOMAIN}/{APP_ENV}`.
 
 ## Conhecimento atualizado
@@ -279,9 +279,9 @@
 - `docs/blunana/README.md`
 - `docs/robos/README.md`
 - `docs/changelog.md`
-- `docs/robo-cef-matriz-rastreabilidade.md`
-- `engenharia-reversa/robo-cef/06-regras-de-negocio.md`
-- `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md`
+- `docs/reverse-engineering-blunana-prompt.md`
+- `engenharia-reversa/blunana/06-regras-de-negocio.md`
+- `engenharia-reversa/blunana/README.md`
 - `engenharia-reversa/blunana/*.md`
 - `.memory/contexto.md`
 - `.memory/historico.md`
@@ -340,7 +340,7 @@
 
 - `docs/tecnica/configuracoes.md` documenta o novo executor.
 - `engenharia-reversa/blunana/*` registra o executor, regras operacionais, cenarios QA, riscos e pontos a validar.
-- `docs/robo-cef-matriz-rastreabilidade.md` e `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md` cobrem `crawler-interface/reverse-prod.ts`.
+- `docs/reverse-engineering-blunana-prompt.md` e `engenharia-reversa/blunana/README.md` cobrem `crawler-interface/reverse-prod.ts`.
 
 ## Documentos alterados
 
@@ -348,9 +348,9 @@
 - `package.json`
 - `docs/tecnica/configuracoes.md`
 - `engenharia-reversa/blunana/*.md`
-- `engenharia-reversa/robo-cef/06-regras-de-negocio.md`
-- `docs/robo-cef-matriz-rastreabilidade.md`
-- `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md`
+- `engenharia-reversa/blunana/06-regras-de-negocio.md`
+- `docs/reverse-engineering-blunana-prompt.md`
+- `engenharia-reversa/blunana/README.md`
 
 ## Pendencias encontradas
 
@@ -373,7 +373,7 @@
 ## Conhecimento atualizado
 
 - `docs/changelog.md` registra a geracao dos entregaveis.
-- `docs/robo-cef-matriz-rastreabilidade.md` e `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md` passam a apontar para `engenharia-reversa/blunana/*`.
+- `docs/reverse-engineering-blunana-prompt.md` e `engenharia-reversa/blunana/README.md` passam a apontar para `engenharia-reversa/blunana/*`.
 - `.memory/contexto.md` e `.memory/historico.md` registram a documentacao gerada e a pendencia de coleta completa em PROD.
 
 ## Documentos alterados
@@ -397,7 +397,7 @@
 
 ## Recomendacoes
 
-- Manter a documentacao Blunana separada da engenharia reversa do Robo CEF.
+- Manter a documentação Blunana separada do contexto antigo de automação.
 - Usar `CAPTURE_SCREENSHOTS=false` em PROD ate haver mascaramento automatizado de evidencias.
 
 ## Atualizacao - prompt Blunana PROD
@@ -410,14 +410,14 @@
 ## Conhecimento atualizado
 
 - `docs/changelog.md` registra a criacao do novo prompt.
-- `docs/robo-cef-matriz-rastreabilidade.md` e `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md` passam a cobrir o novo prompt.
+- `docs/reverse-engineering-blunana-prompt.md` e `engenharia-reversa/blunana/README.md` passam a cobrir o novo prompt.
 
 ## Documentos alterados
 
 - `prompts/09-engenharia-reversa-blunana-prod.md`
 - `docs/changelog.md`
-- `docs/robo-cef-matriz-rastreabilidade.md`
-- `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md`
+- `docs/reverse-engineering-blunana-prompt.md`
+- `engenharia-reversa/blunana/README.md`
 - `.memory/contexto.md`
 - `.memory/historico.md`
 - `outputs/relatorios/aprendizado.md`
@@ -443,7 +443,7 @@
 - `docs/tecnica/configuracoes.md` documenta os caminhos por ambiente, scripts de producao e variaveis esperadas.
 - `docs/funcional/mapa-navegacao-blunana.md` diferencia evidencia historica DEV de artefatos esperados em PROD.
 - `knowledge/frontend/rotas-blunana.md` registra PROD como ponto a validar ate execucao real.
-- `docs/robo-cef-matriz-rastreabilidade.md` e `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md` cobrem `config/paths.ts`, `outputs/{tipo}/blunana/*` e `outputs/{tipo}/robos/*`.
+- `docs/reverse-engineering-blunana-prompt.md` e `engenharia-reversa/blunana/README.md` cobrem `config/paths.ts`, `outputs/{tipo}/blunana/*` e `outputs/{tipo}/robos/*`.
 
 ## Documentos alterados
 
@@ -453,11 +453,11 @@
 - `docs/changelog.md`
 - `docs/tecnica/configuracoes.md`
 - `docs/funcional/mapa-navegacao-blunana.md`
-- `docs/robo-cef-matriz-rastreabilidade.md`
-- `docs/robo-cef-regras-negocio.md`
+- `docs/reverse-engineering-blunana-prompt.md`
+- `docs/reverse-engineering-blunana-prompt.md`
 - `knowledge/frontend/rotas-blunana.md`
-- `engenharia-reversa/robo-cef/06-regras-de-negocio.md`
-- `engenharia-reversa/robo-cef/13-matriz-rastreabilidade.md`
+- `engenharia-reversa/blunana/06-regras-de-negocio.md`
+- `engenharia-reversa/blunana/README.md`
 
 ## Pendencias encontradas
 

@@ -6,12 +6,13 @@ import { gerarResposta } from "../../core/answer";
 export async function assistant(req: Request, res: Response) {
   const start = Date.now();
 
-  const { question, environment = "prod", user = "cliente" } = req.body;
+  const projectName = process.env.PROJECT_NAME || "Blunana / Suporte";
+  const { question, environment = process.env.APP_ENV || "prod", user = "cliente" } = req.body;
 
   if (!question) {
     return res.status(400).json({
       success: false,
-      project: "Blunana / Robo CEF",
+      project: projectName,
       environment,
       user,
       mustUse: true,
@@ -61,7 +62,7 @@ export async function assistant(req: Request, res: Response) {
 
   return res.json({
     success: results.length > 0 || usedPlaywright,
-    project: "Blunana / Robo CEF",
+    project: projectName,
     environment,
     user,
     mustUse: true,

@@ -1,60 +1,36 @@
-# Atualizar Documentacao
+# Atualizar Documentação
 
 ## Objetivo
 
-Atualizar a documentacao Markdown impactada por alteracoes no codigo-fonte, configuracoes, dependencias, integracoes, banco de dados, fluxos, validacoes, permissoes ou regras de negocio.
+Atualizar a documentação Markdown impactada por alterações no código-fonte, configurações, integrações, banco de dados, fluxos, validações, permissões ou regras de negócio.
 
-## Instrucoes
+## Instruções
 
-1. Comparar as alteracoes do codigo com a documentacao existente.
-2. Atualizar os arquivos impactados em `/engenharia-reversa/robo-cef`.
-3. Atualizar obrigatoriamente `06-regras-de-negocio.md` quando houver mudanca de regra, validacao, filtro, calculo, status, fluxo, importacao, notificacao ou persistencia.
-4. Atualizar obrigatoriamente `13-matriz-rastreabilidade.md` para refletir novos arquivos, regras, modulos, integracoes ou mudancas de cobertura.
-5. Atualizar `/docs` quando a documentacao funcional ou tecnica for impactada.
-6. Registrar evidencias com caminho do arquivo onde a informacao foi encontrada.
-7. Marcar como "Ponto a validar" tudo que nao estiver comprovado no codigo.
+1. Comparar as alterações do código com a documentação existente.
+2. Atualizar os arquivos impactados em `engenharia-reversa/blunana/`, `docs/` e `support/`.
+3. Atualizar obrigatoriamente os materiais de regras de negócio ou fluxo operacional quando houver mudança de regra, validação, filtro, cálculo, status, fluxo, importação, notificação ou persistência.
+4. Atualizar a rastreabilidade documental quando houver novos arquivos, regras, módulos, integrações ou mudanças de cobertura.
+5. Registrar evidências com caminho do arquivo onde a informação foi encontrada.
+6. Marcar como "Ponto a validar" tudo que não estiver comprovado no código ou em evidências locais.
 
-# Atualização Inteligente da Documentação
-
-Você está atuando como arquiteto do projeto.
-
-Analise todas as alterações realizadas desde a última documentação.
-
-## Verifique
+## Checklist de revisão
 
 - Novos arquivos
 - Arquivos removidos
 - Arquivos modificados
-- Novas telas
-- Novos endpoints
+- Novas telas ou rotas
+- Novos endpoints ou integrações
 - Alterações em regras de negócio
 - Mudanças de permissões
-- Mudanças em banco de dados
-- Alterações em APIs
-- Alterações em validações
-- Alterações em mensagens de erro
+- Alterações em validações e mensagens de erro
 
-## Para cada alteração
+## Atualização obrigatória
 
-Informe:
+Sempre revisar:
 
-- Arquivo afetado
-- Tipo da alteração
-- Impacto funcional
-- Impacto técnico
-- Documentação afetada
-- Necessidade de novos testes
-- Necessidade de atualização do FAQ
+- `docs/`
+- `engenharia-reversa/blunana/`
+- `support/`
+- `knowledge/`
 
-## Atualize automaticamente
-
-/docs
-
-Gerando:
-
-- Release Notes
-- Histórico de Alterações
-- Documentação Funcional
-- Documentação Técnica
-
-Não remova conteúdo existente sem justificativa.
+Não remover conteúdo existente sem justificativa e sem preservar a história documental relevante.

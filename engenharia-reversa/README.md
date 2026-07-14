@@ -1,19 +1,18 @@
 # Engenharia Reversa
 
-Esta pasta concentra documentacao consolidada de engenharia reversa do projeto.
+Esta pasta concentra a documentação consolidada de engenharia reversa do projeto Blunana.
 
 ## Estrutura
 
-| Pasta | Conteudo |
+| Pasta | Conteúdo |
 |---|---|
-| `robo-cef/` | Engenharia reversa do robo CEF Publicacoes |
 | `blunana/` | Engenharia reversa do Blunana |
-| `integrações/` | Mapeamento de integracoes externas e internas |
+| `integrações/` | Mapeamento de integrações externas e internas |
 | `banco/` | Modelagem, tabelas, queries e lacunas de banco |
 | `api/` | APIs, endpoints, payloads e respostas |
-| `frontend/` | Rotas, telas, formularios e componentes de interface |
-| `backend/` | Servicos, workers, regras e fluxos server-side |
+| `frontend/` | Rotas, telas, formulários e componentes de interface |
+| `backend/` | Serviços, regras e fluxos server-side |
 
 ## Regra
 
-Documentacao tecnica e funcional de engenharia reversa deve ficar aqui. Arquivos gerados por execucao, evidencias, screenshots, JSON e logs devem ficar em `outputs/`.
+A documentação técnica e funcional de engenharia reversa deve ficar aqui. Arquivos gerados por execução, evidências, screenshots, JSON e logs devem ficar em `outputs/`.

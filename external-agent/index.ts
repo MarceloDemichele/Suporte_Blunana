@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import "../config/loadEnv";
 import { paths } from "./config/paths";
 import { buscar } from "./core/search";
 import { gerarResposta } from "./core/answer";

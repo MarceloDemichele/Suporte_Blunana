@@ -1,48 +1,70 @@
-# Assistente IA CEF
+# Assistente IA de suporte Blunana
 
-Esta pasta e dedicada ao Assistente IA CEF.
-
-O objetivo final deste modulo e concentrar a camada de assistente, contexto, provedores de IA, ferramentas e servicos de apoio ao projeto Robo CEF Publicacoes.
+Esta pasta concentra o agente interno usado no fluxo de suporte Blunana.
 
 ## Papel no projeto
 
-Antes de procurar arquivos diretamente, o Assistente IA CEF deve consultar:
+O objetivo principal é receber uma solicitação de um agente externo, montar contexto a partir de documentação, tickets, knowledge e materiais de suporte, e responder com base em evidências.
 
-- `index/master-index.json`
+Antes de procurar arquivos diretamente, o agente deve consultar:
 
-O entrypoint `external-agent/index.ts` executa uma busca inicial a partir de uma pergunta informada por argumento.
+- index/master-index.json
+
+O ponto de entrada do fluxo está em external-agent/index.ts.
 
 Exemplo:
 
 ```bash
-npm run agent:cef -- "publicacoes CEF"
+npm run agent:ask -- "como funciona o fluxo de suporte?"
 ```
 
 As fontes locais do assistente ficam centralizadas em:
 
-- `external-agent/config/paths.ts`
+- external-agent/config/paths.ts
 
 A busca local em Markdown e JSON fica em:
 
-- `external-agent/core/search.ts`
+- external-agent/core/search.ts
 
-| Area | Responsabilidade |
+| Área | Responsabilidade |
 |---|---|
-| `config/` | Configuracoes do assistente e parametros de execucao |
-| `core/` | Tipos, contratos e orquestracao central do assistente |
-| `context/` | Montagem de contexto a partir de docs, knowledge, outputs e engenharia reversa |
-| `providers/` | Adaptadores para provedores de IA |
-| `services/` | Servicos de dominio usados pelo assistente |
-| `prompts/` | Prompts especificos do Assistente IA CEF |
-| `tools/` | Ferramentas acionaveis pelo assistente |
-| `cache/` | Cache local de contexto e respostas intermediarias |
-| `logs/` | Logs locais do assistente |
-| `index.ts` | Executor inicial do Assistente IA CEF |
+| config/ | Configurações do assistente e parâmetros de execução |
+| core/ | Tipos, contratos e orquestração central |
+| context/ | Montagem de contexto a partir de docs, knowledge, outputs e engenharia reversa |
+| providers/ | Adaptadores para provedores de IA |
+| services/ | Serviços de domínio usados pelo assistente |
+| prompts/ | Prompts específicos do assistente |
+| tools/ | Ferramentas acionáveis pelo assistente |
+| cache/ | Cache local de contexto e respostas intermediárias |
+| logs/ | Logs locais do assistente |
+| index.ts | Executor inicial do assistente |
 
-## Relacao com o crawler
+## Variáveis de ambiente para conexão
 
-O crawler permanece como fonte auxiliar de evidencias e engenharia reversa. O Assistente IA CEF deve consumir documentacao, knowledge, tickets, outputs e artefatos do crawler, mas nao deve depender do crawler como centro da arquitetura.
+O serviço depende das seguintes variáveis no ambiente de execução:
+
+- `APP_ENV` — ambiente operacional, como `dev`, `hml` ou `prod`
+- `APP_URL` — URL de login do Blunana
+- `APP_USER` — usuário autorizado
+- `APP_PASSWORD` — senha do usuário
+- `MFA_SECRET` — segredo TOTP para MFA
+- `ALLOW_PLAYWRIGHT` — `true` para habilitar navegação real via Playwright
+- `PROJECT_NAME` — nome apresentado pela API, por padrão `Blunana / Suporte`
+- `AGENT_PORT` — porta da API, por padrão `3333`
+
+Exemplo local em `.env`:
+
+```env
+APP_ENV=dev
+APP_URL=https://exemplo/login
+APP_USER=usuario
+APP_PASSWORD=senha
+MFA_SECRET=segredo
+ALLOW_PLAYWRIGHT=false
+PROJECT_NAME=Blunana / Suporte
+AGENT_PORT=3333
+```
 
 ## Estado atual
 
-Executor inicial criado com busca em fontes locais. Implementacao com provedores de IA, ferramentas e memoria de execucao ainda sao pontos a validar.
+O fluxo inicial já está estruturado para busca local, contexto e resposta com base em materiais do projeto.
