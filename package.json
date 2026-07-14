@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "npm run agent:ask -- \"teste\"",
+    "build": "tsc -p tsconfig.json",
     "start": "ts-node external-agent/api/server.ts",
     "agent:support": "ts-node external-agent/index.ts",
     "agent:ask": "npm run agent:support",
