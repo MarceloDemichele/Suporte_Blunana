@@ -3,7 +3,7 @@ import path from "path";
 import "../config/loadEnv";
 import { paths } from "./config/paths";
 import { buscar } from "./core/search";
-import { gerarResposta } from "./core/answer";
+import { gerarResposta, temRespostaOperacional } from "./core/answer";
 
 const pergunta = process.argv.slice(2).join(" ");
 
@@ -23,8 +23,16 @@ const fontes = [
   ...paths.reverseDirs,
 ];
 
+async function executar() {
 const resultados = buscar(pergunta, fontes);
-const resposta = gerarResposta(pergunta, resultados);
+let runtimeEvidence = null;
+
+if (!temRespostaOperacional(pergunta, resultados) && process.env.ALLOW_PLAYWRIGHT === "true") {
+  const { consultarAplicacao } = await import("./providers/playwright.provider.js");
+  runtimeEvidence = await consultarAplicacao(pergunta);
+}
+
+const resposta = gerarResposta(pergunta, resultados, runtimeEvidence);
 
 fs.mkdirSync("external-agent/logs", { recursive: true });
 
@@ -38,3 +46,9 @@ fs.writeFileSync(outputPath, resposta, "utf-8");
 
 console.log(resposta);
 console.log(`\nResposta salva em: ${outputPath}`);
+}
+
+executar().catch((error) => {
+  console.error("Não foi possível concluir a consulta:", String(error));
+  process.exit(1);
+});

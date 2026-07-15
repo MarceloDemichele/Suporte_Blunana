@@ -1,0 +1,256 @@
+{
+  "capturedAt": "2026-07-15T17:15:44.816Z",
+  "environment": "hml",
+  "menu": "Configuração do Prazo",
+  "path": "/@rocha_juridico_hml/app/configuracao_de_prazo",
+  "secoes": [
+    {
+      "aba": "Tela principal",
+      "estrutura": {
+        "labels": [
+          "Cliente",
+          "Responsável",
+          "Área do Cliente",
+          "Tipo de Ação",
+          "Tipo de Prazo",
+          "Status"
+        ],
+        "fields": [
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Todos os responsáveis",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Todas as áreas",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Todos os tipos de ação",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Todos os tipos de prazo",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Todos os status",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "Items per page:",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Adicionar configuração",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          }
+        ],
+        "columns": [
+          "Responsável",
+          "Área do Cliente",
+          "Tipo de Ação",
+          "Tipo de Prazo",
+          "Status",
+          "Ações"
+        ],
+        "messages": []
+      }
+    }
+  ],
+  "modais": [
+    {
+      "origem": "Adicionar configuração",
+      "estrutura": {
+        "labels": [
+          "Cliente",
+          "Área do Cliente *",
+          "Tipo de ação",
+          "Tipo de prazo *",
+          "Responsável *"
+        ],
+        "fields": [
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione a área",
+            "ariaLabel": "",
+            "disabled": true
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione o tipo de ação",
+            "ariaLabel": "",
+            "disabled": true
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione o tipo de prazo",
+            "ariaLabel": "",
+            "disabled": true
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione o responsável",
+            "ariaLabel": "",
+            "disabled": true
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Cancelar",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Salvar",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": true
+          }
+        ],
+        "columns": [],
+        "messages": []
+      }
+    }
+  ]
+}

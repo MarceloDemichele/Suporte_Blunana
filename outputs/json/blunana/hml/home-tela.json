@@ -1,0 +1,88 @@
+{
+  "capturedAt": "2026-07-15T17:01:15.363Z",
+  "environment": "hml",
+  "mode": "read-only",
+  "menu": "Home",
+  "title": "Blunana",
+  "path": "/@rocha_juridico_hml/app/home",
+  "headings": [],
+  "labels": [
+    "Data"
+  ],
+  "fields": [
+    {
+      "tag": "input",
+      "type": "date",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    }
+  ],
+  "buttons": [
+    {
+      "text": "",
+      "ariaLabel": "Hide menu",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Hide menu",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Change language",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Change theme",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Enter fullscreen",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "S",
+      "ariaLabel": "Open user data",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "Atualizar",
+      "ariaLabel": "",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "7%Pendente93%TratadoRecebidos no dia0Tratados no dia0Total na base50.472Pendentes3.761Tratados46.711Painel Abrir painel",
+      "ariaLabel": "Ir para Processos",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "1%Pendente99%TratadoRecebidas no dia0Tratadas no dia0Total na base68.716Pendentes368Tratadas68.348Painel Abrir painel",
+      "ariaLabel": "Ir para Publicacoes",
+      "title": "",
+      "disabled": false
+    }
+  ],
+  "tabs": [],
+  "tableHeaders": [
+    "Nome",
+    "Ultima interacao",
+    "Tempo ultima interacao",
+    "Status",
+    "Tempo Logado"
+  ],
+  "modal": null
+}

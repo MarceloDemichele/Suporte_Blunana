@@ -1,0 +1,205 @@
+{
+  "capturedAt": "2026-07-15T17:17:03.362Z",
+  "environment": "hml",
+  "menu": "Publicações",
+  "path": "/@rocha_juridico_hml/app/publicacoes",
+  "secoes": [
+    {
+      "aba": "Tela principal",
+      "estrutura": {
+        "labels": [
+          "Status",
+          "Area",
+          "Tipo de acao",
+          "Responsavel",
+          "Tratado",
+          "Codigo do Cliente",
+          "Numero do processo",
+          "Data recebimento (de)",
+          "Data recebimento (ate)",
+          "Data publicacao (de)",
+          "Data publicacao (ate)",
+          "Data disponibilizacao (de)",
+          "Data disponibilizacao (ate)",
+          "Data Tratado (de)",
+          "Data Tratado (ate)"
+        ],
+        "fields": [
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Digite para buscar a area",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Digite para buscar o tipo de acao",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Digite para buscar o responsavel",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Informe o codigo do cliente",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "0000000-00.0000.0.00.0000",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "Items per page:",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Possiveis duplicidades",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Close",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Limpar filtros",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          }
+        ],
+        "columns": [
+          "Status",
+          "Numero do processo",
+          "Area",
+          "Tipo de Acao",
+          "Responsavel",
+          "Data publicacao",
+          "Data de disponibilizacao",
+          "Publicacao",
+          "Lido",
+          "Tratado",
+          "Acao"
+        ],
+        "messages": [
+          "Exibindo 368 de 68716 publicacoes"
+        ]
+      }
+    }
+  ],
+  "modais": []
+}

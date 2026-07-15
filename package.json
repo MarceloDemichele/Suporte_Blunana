@@ -13,7 +13,17 @@
     "agent:support": "ts-node external-agent/index.ts",
     "agent:ask": "npm run agent:support",
     "agent:index": "ts-node external-agent/tools/build-index.ts",
-    "agent:server": "ts-node external-agent/api/server.ts"
+    "agent:server": "ts-node external-agent/api/server.ts",
+    "login:prod": "cross-env APP_ENV=prod HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/test-login.ts",
+    "menu:prod": "cross-env APP_ENV=prod HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/test-menu.ts",
+    "login:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/test-login.ts",
+    "menu:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/test-menu.ts",
+    "mapear:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/mapear-escopo-hml.ts",
+    "aprofundar:config:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true DEEP_GROUP=config HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/aprofundar-configuracoes-hml.ts",
+    "aprofundar:menu:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true DEEP_GROUP=menu HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/aprofundar-configuracoes-hml.ts",
+    "validar:massa:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/validar-massa-hml.ts",
+    "listar:opcoes:massa:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/listar-opcoes-massa-hml.ts",
+    "validar:obrigatoriedade:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/validar-obrigatoriedade-hml.ts"
   },
   "keywords": [],
   "author": "",

@@ -1,6 +1,4 @@
-import { generateSync } from "otplib";
-
-export function gerarCodigoMFA(secret: string): string {
+export async function gerarCodigoMFA(secret: string): Promise<string> {
   if (!secret) {
     throw new Error("MFA_SECRET não configurado.");
   }
@@ -13,5 +11,6 @@ export function gerarCodigoMFA(secret: string): string {
     throw new Error("MFA_SECRET invalido.");
   }
 
+  const { generateSync } = await import("otplib");
   return generateSync({ secret: normalizedSecret.replace(/\s/g, "") });
 }

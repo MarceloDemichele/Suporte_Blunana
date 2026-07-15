@@ -1,0 +1,221 @@
+{
+  "capturedAt": "2026-07-15T17:15:48.584Z",
+  "environment": "hml",
+  "menu": "Configuração de Processos",
+  "path": "/@rocha_juridico_hml/app/configuracao_de_processos",
+  "secoes": [
+    {
+      "aba": "Tela principal",
+      "estrutura": {
+        "labels": [
+          "Cliente",
+          "Responsável",
+          "Área do Cliente",
+          "Tipo de Ação",
+          "Status"
+        ],
+        "fields": [
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Filtrar por responsável",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Filtrar por área do cliente",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Filtrar por tipo de ação",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Filtrar por status",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "Items per page:",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Adicionar configuração",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          }
+        ],
+        "columns": [
+          "Responsavel",
+          "Area do Cliente",
+          "Tipo de Acao",
+          "Status",
+          "Acoes"
+        ],
+        "messages": []
+      }
+    }
+  ],
+  "modais": [
+    {
+      "origem": "Adicionar configuração",
+      "estrutura": {
+        "labels": [
+          "Cliente",
+          "Área do Cliente *",
+          "Tipo de ação",
+          "Responsável *"
+        ],
+        "fields": [
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione a área",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione o tipo de ação",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione o responsável",
+            "ariaLabel": "",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Cancelar",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Salvar",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": true
+          }
+        ],
+        "columns": [],
+        "messages": []
+      }
+    }
+  ]
+}

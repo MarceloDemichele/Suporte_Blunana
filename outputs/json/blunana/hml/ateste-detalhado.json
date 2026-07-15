@@ -1,0 +1,513 @@
+{
+  "capturedAt": "2026-07-15T17:17:15.681Z",
+  "environment": "hml",
+  "menu": "Ateste",
+  "path": "/@rocha_juridico_hml/app/ateste",
+  "secoes": [
+    {
+      "aba": "Tela principal",
+      "estrutura": {
+        "labels": [
+          "Status",
+          "Numero do processo",
+          "Area de ateste",
+          "Tipo de ateste",
+          "Criacao (de)",
+          "Criacao (ate)",
+          "Solicitacao (de)",
+          "Solicitacao (ate)",
+          "Recebimento (de)",
+          "Recebimento (ate)"
+        ],
+        "fields": [
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "0000000-00.0000.0.00.0000",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione a area de ateste",
+            "ariaLabel": "",
+            "disabled": true
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "Items per page:",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Limpar filtros",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Upload Pagamento",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Editar ateste",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Excluir ateste",
+            "title": "",
+            "disabled": false
+          }
+        ],
+        "columns": [
+          "Status",
+          "Numero do Processo",
+          "Data do ateste",
+          "Area de ateste",
+          "Tipo de ateste",
+          "Solicitado",
+          "Recebido",
+          "Rejeitado",
+          "Valor",
+          "Acao"
+        ],
+        "messages": [
+          "Exibindo 272 de 272"
+        ]
+      }
+    }
+  ],
+  "modais": []
+}

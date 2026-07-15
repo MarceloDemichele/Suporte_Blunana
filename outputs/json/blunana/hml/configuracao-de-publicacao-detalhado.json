@@ -1,0 +1,221 @@
+{
+  "capturedAt": "2026-07-15T17:15:41.388Z",
+  "environment": "hml",
+  "menu": "Configuração de Publicação",
+  "path": "/@rocha_juridico_hml/app/configuracao_de_publicacoes",
+  "secoes": [
+    {
+      "aba": "Tela principal",
+      "estrutura": {
+        "labels": [
+          "Cliente",
+          "Responsável",
+          "Área do Cliente",
+          "Tipo de Ação",
+          "Status"
+        ],
+        "fields": [
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Todos os responsáveis",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Todas as áreas",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Todos os tipos",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Todos os status",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "Items per page:",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Adicionar Configuração",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          }
+        ],
+        "columns": [
+          "Responsável",
+          "Área do Cliente",
+          "Tipo de Ação",
+          "Status",
+          "Ações"
+        ],
+        "messages": []
+      }
+    }
+  ],
+  "modais": [
+    {
+      "origem": "Adicionar Configuração",
+      "estrutura": {
+        "labels": [
+          "Cliente",
+          "Área do Cliente *",
+          "Tipo de ação",
+          "Responsável *"
+        ],
+        "fields": [
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione a área",
+            "ariaLabel": "",
+            "disabled": true
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione o tipo de ação",
+            "ariaLabel": "",
+            "disabled": true
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione o responsável",
+            "ariaLabel": "",
+            "disabled": true
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Cancelar",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Salvar",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": true
+          }
+        ],
+        "columns": [],
+        "messages": []
+      }
+    }
+  ]
+}

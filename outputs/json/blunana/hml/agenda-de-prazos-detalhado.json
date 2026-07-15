@@ -1,0 +1,1467 @@
+{
+  "capturedAt": "2026-07-15T17:16:54.923Z",
+  "environment": "hml",
+  "menu": "Agenda de prazos",
+  "path": "/@rocha_juridico_hml/app/agenda_nova",
+  "secoes": [
+    {
+      "aba": "Prazos 0",
+      "estrutura": {
+        "labels": [
+          "Data selecionada",
+          "Status",
+          "Area",
+          "Tipo de acao",
+          "Responsavel",
+          "Codigo do cliente",
+          "Numero do processo"
+        ],
+        "fields": [
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Codigo",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "0000000-00.0000.0.00.0000",
+            "ariaLabel": "",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Hoje",
+            "ariaLabel": "",
+            "title": "Selecionar hoje",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-06-28",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-06-29",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-06-30",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-01",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-02",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-03",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-04",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-05",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-06",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-07",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-08",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-09",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-10",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-11",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-12",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-13",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-14",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-15",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-16",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-17",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-18",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-19",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-20",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-21",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-22",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-23",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-24",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-25",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-26",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-27",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-28",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-29",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-30",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-31",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-01",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-02",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-03",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-04",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-05",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-06",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-07",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-08",
+            "disabled": false
+          },
+          {
+            "text": "Prazos 0",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Audiencias 0",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Tarefas 0",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Limpar filtros",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          }
+        ],
+        "columns": [],
+        "messages": [
+          "Nenhum item para esta data."
+        ]
+      }
+    },
+    {
+      "aba": "Audiencias 0",
+      "estrutura": {
+        "labels": [
+          "Data selecionada",
+          "Status",
+          "Area",
+          "Tipo de acao",
+          "Responsavel",
+          "Codigo do cliente",
+          "Numero do processo"
+        ],
+        "fields": [
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Codigo",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "0000000-00.0000.0.00.0000",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Codigo",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "0000000-00.0000.0.00.0000",
+            "ariaLabel": "",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Hoje",
+            "ariaLabel": "",
+            "title": "Selecionar hoje",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-06-28",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-06-29",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-06-30",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-01",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-02",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-03",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-04",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-05",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-06",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-07",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-08",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-09",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-10",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-11",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-12",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-13",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-14",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-15",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-16",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-17",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-18",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-19",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-20",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-21",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-22",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-23",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-24",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-25",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-26",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-27",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-28",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-29",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-30",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-31",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-01",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-02",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-03",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-04",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-05",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-06",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-07",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-08",
+            "disabled": false
+          },
+          {
+            "text": "Prazos 0",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Audiencias 0",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Tarefas 0",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Limpar filtros",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Limpar filtros",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          }
+        ],
+        "columns": [],
+        "messages": [
+          "Nenhum item para esta data."
+        ]
+      }
+    },
+    {
+      "aba": "Tarefas 0",
+      "estrutura": {
+        "labels": [
+          "Data selecionada",
+          "Status",
+          "Area",
+          "Tipo de acao",
+          "Responsavel",
+          "Codigo do cliente",
+          "Numero do processo"
+        ],
+        "fields": [
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Codigo",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "0000000-00.0000.0.00.0000",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Codigo",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "0000000-00.0000.0.00.0000",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Codigo",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "0000000-00.0000.0.00.0000",
+            "ariaLabel": "",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Hoje",
+            "ariaLabel": "",
+            "title": "Selecionar hoje",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-06-28",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-06-29",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-06-30",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-01",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-02",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-03",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-04",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-05",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-06",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-07",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-08",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-09",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-10",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-11",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-12",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-13",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-14",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-15",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-16",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-17",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-18",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-19",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-20",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-21",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-22",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-23",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-24",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-25",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-26",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-27",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-28",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-29",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-30",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-07-31",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-01",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-02",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-03",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-04",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-05",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-06",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-07",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "title": "Selecionar 2026-08-08",
+            "disabled": false
+          },
+          {
+            "text": "Prazos 0",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Audiencias 0",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Tarefas 0",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Limpar filtros",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Limpar filtros",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Limpar filtros",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          }
+        ],
+        "columns": [],
+        "messages": [
+          "Nenhum item para esta data."
+        ]
+      }
+    }
+  ],
+  "modais": []
+}

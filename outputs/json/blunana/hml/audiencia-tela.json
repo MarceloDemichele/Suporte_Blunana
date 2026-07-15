@@ -1,0 +1,213 @@
+{
+  "capturedAt": "2026-07-15T17:01:32.411Z",
+  "environment": "hml",
+  "mode": "read-only",
+  "menu": "Audiência",
+  "title": "Blunana",
+  "path": "/@rocha_juridico_hml/app/audiencia",
+  "headings": [],
+  "labels": [
+    "Status",
+    "Area",
+    "Tipo de acao",
+    "Responsavel",
+    "Codigo do Cliente",
+    "Numero do Processo",
+    "Data audiencia (de)",
+    "Data audiencia (ate)",
+    "Data tratado (de)",
+    "Data tratado (ate)"
+  ],
+  "fields": [
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "Selecione",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "Selecione a area",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "Selecione o tipo de acao",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "Selecione o advogado",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "Código do cliente",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "0000000-00.0000.0.00.0000",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    }
+  ],
+  "buttons": [
+    {
+      "text": "",
+      "ariaLabel": "Hide menu",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Hide menu",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Change language",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Change theme",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Enter fullscreen",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "S",
+      "ariaLabel": "Open user data",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "Ver todas",
+      "ariaLabel": "",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "Limpar filtros",
+      "ariaLabel": "",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Exportar filtros para Excel",
+      "title": "Exportar filtros para Excel",
+      "disabled": false
+    }
+  ],
+  "tabs": [],
+  "tableHeaders": [
+    "Status",
+    "Alerta",
+    "Nº Processo",
+    "Data",
+    "Hora",
+    "UF",
+    "Tipo",
+    "Nome da Parte",
+    "Advogado Audiência",
+    "Link/Endereço",
+    "Diário de Bordo",
+    "Subs",
+    "Ação"
+  ],
+  "modal": null
+}

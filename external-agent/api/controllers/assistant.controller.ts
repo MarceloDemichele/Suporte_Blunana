@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { paths } from "../../config/paths";
 import { buscar } from "../../core/search";
-import { gerarResposta } from "../../core/answer";
+import { gerarResposta, temRespostaOperacional } from "../../core/answer";
 
 export async function assistant(req: Request, res: Response) {
   const start = Date.now();
@@ -45,14 +45,14 @@ export async function assistant(req: Request, res: Response) {
   let runtimeEvidence = null;
   let usedPlaywright = false;
 
-  if (results.length < 2 && process.env.ALLOW_PLAYWRIGHT === "true") {
+  if (!temRespostaOperacional(question, results) && process.env.ALLOW_PLAYWRIGHT === "true") {
     const { consultarAplicacao } = await import("../../providers/playwright.provider.js");
 
     runtimeEvidence = await consultarAplicacao(question);
     usedPlaywright = runtimeEvidence?.used === true;
   }
 
-  const answer = gerarResposta(question, results);
+  const answer = gerarResposta(question, results, runtimeEvidence);
 
   const confidence =
     results.length >= 3 ? 90 :

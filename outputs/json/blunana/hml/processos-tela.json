@@ -1,0 +1,660 @@
+{
+  "capturedAt": "2026-07-15T17:01:21.710Z",
+  "environment": "hml",
+  "mode": "read-only",
+  "menu": "Processos",
+  "title": "Blunana",
+  "path": "/@rocha_juridico_hml/app/processos1",
+  "headings": [],
+  "labels": [
+    "Situação",
+    "Status",
+    "Área",
+    "Tipo de acao",
+    "Responsavel",
+    "Codigo do cliente",
+    "Extinto",
+    "Numero do processo",
+    "Data de recebimento (de)",
+    "Data de recebimento (ate)",
+    "Data tratado (de)",
+    "Data tratado (ate)"
+  ],
+  "fields": [
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "Codigo do cliente",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "0000000-00.0000.0.00.0000",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    }
+  ],
+  "buttons": [
+    {
+      "text": "",
+      "ariaLabel": "Hide menu",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Hide menu",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Change language",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Change theme",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Enter fullscreen",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "S",
+      "ariaLabel": "Open user data",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "Adicionar Processo",
+      "ariaLabel": "",
+      "title": "",
+      "disabled": false
+    },
+    {
+      "text": "Limpar filtros",
+      "ariaLabel": "",
+      "title": "",
+      "disabled": false
+    }
+  ],
+  "tabs": [],
+  "tableHeaders": [
+    "Stituação",
+    "Status",
+    "Numero do processo",
+    "Area",
+    "Tipo de acao",
+    "Responsavel",
+    "Data recebimento",
+    "Data tratado",
+    "Acao"
+  ],
+  "modal": {
+    "title": "Blunana",
+    "path": "/@rocha_juridico_hml/app/processos1",
+    "headings": [],
+    "labels": [
+      "Situação",
+      "Status",
+      "Área",
+      "Tipo de acao",
+      "Responsavel",
+      "Codigo do cliente",
+      "Extinto",
+      "Numero do processo",
+      "Data de recebimento (de)",
+      "Data de recebimento (ate)",
+      "Data tratado (de)",
+      "Data tratado (ate)",
+      "Codigo do Cliente *",
+      "Codigo Terceirizacao",
+      "Numero do Processo *",
+      "Comarca",
+      "Foro",
+      "Vara",
+      "Area *",
+      "Tipo de Acao *",
+      "Nome da Parte",
+      "CPF - CNPJ"
+    ],
+    "fields": [
+      {
+        "tag": "select",
+        "type": "",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "type": "",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "type": "",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "type": "",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "type": "",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "Codigo do cliente",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "type": "",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "0000000-00.0000.0.00.0000",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "dd/mm/aaaa",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "dd/mm/aaaa",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "dd/mm/aaaa",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "dd/mm/aaaa",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "type": "",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "0000000-00.0000.0.00.0000",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "type": "",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "select",
+        "type": "",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "",
+        "placeholder": "",
+        "ariaLabel": "",
+        "required": false,
+        "disabled": false
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "ariaLabel": "Hide menu",
+        "title": "",
+        "disabled": false
+      },
+      {
+        "text": "",
+        "ariaLabel": "Hide menu",
+        "title": "",
+        "disabled": false
+      },
+      {
+        "text": "",
+        "ariaLabel": "Change language",
+        "title": "",
+        "disabled": false
+      },
+      {
+        "text": "",
+        "ariaLabel": "Change theme",
+        "title": "",
+        "disabled": false
+      },
+      {
+        "text": "",
+        "ariaLabel": "Enter fullscreen",
+        "title": "",
+        "disabled": false
+      },
+      {
+        "text": "S",
+        "ariaLabel": "Open user data",
+        "title": "",
+        "disabled": false
+      },
+      {
+        "text": "Adicionar Processo",
+        "ariaLabel": "",
+        "title": "",
+        "disabled": false
+      },
+      {
+        "text": "Limpar filtros",
+        "ariaLabel": "",
+        "title": "",
+        "disabled": false
+      },
+      {
+        "text": "Cancelar",
+        "ariaLabel": "",
+        "title": "",
+        "disabled": false
+      },
+      {
+        "text": "Salvar",
+        "ariaLabel": "",
+        "title": "",
+        "disabled": false
+      }
+    ],
+    "tabs": [],
+    "tableHeaders": [
+      "Stituação",
+      "Status",
+      "Numero do processo",
+      "Area",
+      "Tipo de acao",
+      "Responsavel",
+      "Data recebimento",
+      "Data tratado",
+      "Acao"
+    ]
+  }
+}
