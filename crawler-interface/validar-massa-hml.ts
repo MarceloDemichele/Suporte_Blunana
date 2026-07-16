@@ -11,6 +11,15 @@ function exigir(nome: string) {
   return valor;
 }
 
+async function aguardarHabilitado(page: Page, campo: ReturnType<Page["locator"]>, timeoutMs = 10000) {
+  const inicio = Date.now();
+  while (Date.now() - inicio < timeoutMs) {
+    if (!await campo.isDisabled().catch(() => true)) return;
+    await page.waitForTimeout(250);
+  }
+  throw new Error("Campo dependente ainda desabilitado apos aguardar o carregamento.");
+}
+
 async function selecionar(page: Page, index: number, envName: string, label?: RegExp) {
   const esperado = exigir(envName);
   let opcoesLidas: string[] = [];
@@ -36,7 +45,7 @@ async function selecionar(page: Page, index: number, envName: string, label?: Re
       if (forId && !placeholders[envName]) combo = dialog.locator(`#${forId}`);
     }
     await combo.waitFor({ state: "visible", timeout: 10000 });
-    if (await combo.isDisabled()) throw new Error("Campo dependente ainda desabilitado.");
+    await aguardarHabilitado(page, combo);
     await combo.locator("xpath=..").click();
     await page.locator('.v-overlay-container .v-list-item-title').filter({ visible: true }).first()
       .waitFor({ state: "visible", timeout: 5000 });
@@ -59,6 +68,10 @@ async function selecionar(page: Page, index: number, envName: string, label?: Re
       await page.keyboard.press("Escape");
     });
     await page.waitForTimeout(700);
+    const valorSelecionado = normalizar(await combo.inputValue());
+    if (valorSelecionado !== normalizar(escolhida)) {
+      throw new Error(`Valor selecionado divergiu do esperado em ${envName}.`);
+    }
     resultados.push({ item: envName, status: "ok" });
     console.log(`${envName}=OK`);
   } catch (error) {

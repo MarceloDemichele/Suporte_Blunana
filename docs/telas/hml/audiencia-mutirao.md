@@ -1,15 +1,15 @@
-# Memoria funcional aprofundada - Audiência Mutirão
+# Audiência Mutirão — memória funcional
 
-Ambiente: HML
-
+Ambiente validado: HML
 Rota: `/@rocha_juridico_hml/app/audiencia_multirao`
 
-## Tela principal
+## Objetivo
 
-### Filtros e campos
+Consultar audiências de mutirão e importar uma relação de audiências em lote.
 
-- Data da audiência (de)
-- Data da audiência (até)
+## Filtros
+
+- Data da audiência: de/até
 - Hora
 - Sijur
 - Processo
@@ -17,45 +17,16 @@ Rota: `/@rocha_juridico_hml/app/audiencia_multirao`
 - Audiência efetuada?
 - Acordo?
 
-### Botoes funcionais
+## Resultado e ações
 
-- Limpar filtros
-- Upload audiência
-- Detalhe
-- Visualizar processo
-- Detalhe
-- Visualizar processo
-- Detalhe
-- Visualizar processo
-- Detalhe
-- Visualizar processo
-- Detalhe
-- Visualizar processo
-- Detalhe
-- Visualizar processo
-- Detalhe
-- Visualizar processo
-- Detalhe
-- Visualizar processo
-- Detalhe
-- Visualizar processo
-- Detalhe
-- Visualizar processo
+A grade apresenta Data da audiência, Hora, Sijur, Parte autora, CPF, Audiência efetuada?, Acordo e Ação. As ações de cada linha são **Detalhe** e **Visualizar processo**.
 
-### Colunas
+### Upload de audiência
 
-- Data da audiência
-- Hora
-- Sijur
-- Parte autora
-- CPF
-- Audiência efetuada?
-- Acordo
-- Ação
+O modal aceita arquivos CSV, TXT, XLS e XLSX. Antes da importação, orienta conferir Data da audiência, Hora, Sijur e Processo. A prévia exibe esses campos e o retorno do processamento. O botão **Importar** permanece desabilitado até a seleção de um arquivo.
 
-## Regras de seguranca da coleta
+## Limites da validação
 
-- Nenhum valor de tabela foi coletado.
-- Nenhum formulario foi submetido.
-- Nenhuma alteracao foi confirmada.
-- Nenhuma screenshot foi capturada.
+- O modal foi aberto e cancelado sem selecionar arquivo.
+- Nenhuma audiência foi importada ou alterada.
+- CPFs e demais dados reais exibidos na grade não foram registrados.

@@ -1,0 +1,137 @@
+export type BusinessRule = {
+  id: string;
+  topic: string;
+  all: string[][];
+  any?: string[];
+  strict?: boolean;
+  answer: string;
+  example: string;
+  source: string;
+};
+
+export type InterpretedRule = {
+  rule: BusinessRule;
+  confidence: number;
+};
+
+function normalize(value: string): string {
+  return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+}
+
+const source = "docs/regras-negocio/juridico-consolidado.md";
+
+export const businessRules: BusinessRule[] = [
+  { id: "RN-001", topic: "dashboard.kpis", all: [["dashboard", "home"], ["kpi", "indicador"], ["carrega", "carregamento", "exibe", "mostra"]], answer: "Ao carregar o **Dashboard**, o sistema exibe os KPIs consolidados.", example: "O dashboard mostra os indicadores ao carregar?", source },
+  { id: "RN-002", topic: "dashboard.prazos", all: [["kpi", "indicador"], ["prazo", "prazos"], ["total", "vencido", "vencer"]], answer: "O KPI de **Prazos** apresenta o total, os vencidos e os que estão a vencer dentro do período configurado.", example: "O que aparece no KPI de prazos?", source },
+  { id: "RN-003", topic: "dashboard.audiencias", all: [["kpi", "indicador"], ["audiencia", "audiencias"], ["dia", "hoje", "corrente"]], answer: "O KPI de **Audiências** apresenta o total de audiências do dia corrente.", example: "O KPI de audiências mostra qual período?", source },
+  { id: "RN-005", topic: "dashboard.api", all: [["kpi", "indicador"], ["api", "chamada", "carregado"], ["independente", "separada", "individual"]], answer: "Cada KPI do Dashboard é carregado por uma chamada independente de API.", example: "Os KPIs são carregados por chamadas independentes?", source },
+  { id: "RN-006", topic: "dashboard.acesso", all: [["dashboard", "home"], ["acesso", "acessar"], ["autenticado", "login", "usuario"]], answer: "O acesso ao Dashboard é restrito a usuários autenticados.", example: "Precisa estar autenticado para acessar o dashboard?", source },
+
+  { id: "RN-010", topic: "agenda.periodo", all: [["agenda", "agenda de prazos"], ["periodo", "mes", "mensal"], ["padrao", "inicial", "corrente", "selecionado"]], answer: "A **Agenda de Prazos** exibe o período selecionado e inicia, por padrão, no mês corrente.", example: "Qual é o período padrão da agenda de prazos?", source },
+  { id: "RN-011", topic: "agenda.vencidos", all: [["prazo", "prazos"], ["vencido", "vencidos"], ["destaque", "urgencia", "visual"]], answer: "Na Agenda de Prazos, os prazos vencidos recebem destaque visual de urgência.", example: "Prazo vencido recebe algum destaque?", source },
+  { id: "RN-012", topic: "agenda.proximos", all: [["prazo", "prazos"], ["proximo", "proximos", "perto"], ["vencimento", "vencer"], ["alerta", "destaque", "visual"]], answer: "Prazos próximos do vencimento recebem um alerta visual na Agenda de Prazos.", example: "Prazos próximos do vencimento têm alerta?", source },
+  { id: "RN-013", topic: "agenda.navegacao", all: [["agenda", "periodo"], ["anterior", "proximo"], ["navegar", "avancar", "voltar"]], answer: "A Agenda permite navegar entre o período anterior e o próximo.", example: "Posso navegar para o período anterior ou próximo na agenda?", source },
+  { id: "RN-014", topic: "agenda.filtro-responsavel", all: [["filtro", "filtrar"], ["responsavel"], ["perfil", "usuario"]], answer: "Na Agenda de Prazos, os filtros por responsável são aplicados conforme o perfil do usuário.", example: "O filtro de responsável depende do perfil do usuário?", source },
+  { id: "RN-015", topic: "agenda.acoes", all: [["agenda", "prazo"], ["lapis", "visualizar"], ["abre", "acao", "serve", "faz", "fazem", "funcao"]], answer: "Na Agenda de Prazos, o **lápis** abre os detalhes do prazo e **Visualizar** abre os detalhes do processo.", example: "O que fazem o lápis e o botão visualizar na agenda?", source },
+
+  { id: "RN-020", topic: "processo.identificador", all: [["processo"], ["numero", "codigo do cliente"], ["unico", "identificador", "duplicado"]], answer: "O **Número do processo não é único**. O identificador único do registro é o **Código do cliente**.", example: "O número do processo é o identificador único?", source },
+  { id: "RN-021", topic: "processo.formato", all: [["numero do processo", "processo"], ["formato", "padrao"], ["cnj", "interno", "aceita", "aceito"]], answer: "O Número do processo pode seguir o formato **CNJ** ou um formato **interno**.", example: "Quais formatos o número do processo aceita?", source },
+  { id: "RN-022", topic: "processo.status", all: [["status", "situacao"], ["processo"], ["visibilidade", "acao", "acoes", "controla"]], answer: "O status do processo controla sua visibilidade e as ações disponíveis.", example: "O status controla as ações disponíveis no processo?", source },
+  { id: "RN-023", topic: "processo.listagem", all: [["processo", "processos"], ["listagem", "lista", "aparecem"], ["padrao", "inicial", "todos"]], answer: "Todos os processos aparecem na listagem padrão.", example: "Todos os processos aparecem na listagem padrão?", source },
+  { id: "RN-024", topic: "processo.responsavel", all: [["processo"], ["responsavel"], ["precisa", "deve", "obrigatorio", "sem", "todo"]], answer: "Sim. **Todo processo deve possuir pelo menos um responsável** vinculado.", example: "Todo processo precisa ter um responsável?", source },
+  { id: "RN-025", topic: "processo.exclusao", all: [["processo"], ["excluir", "exclusao", "deletar", "apagar", "remover", "sumir"], ["sistema", "plataforma", "encerrado", "some"]], answer: "Não. **Nenhum processo é excluído da plataforma**. Sua situação pode ser alterada para **Encerrado**, mas ele continua registrado no sistema.", example: "Se eu excluir um processo, ele some do sistema?", source },
+  { id: "RN-026", topic: "prazo.processo", all: [["prazo"], ["processo"], ["vinculado", "vinculo", "precisa", "deve"]], answer: "Todo prazo deve estar vinculado a um processo.", example: "Todo prazo precisa estar vinculado a um processo?", source },
+  { id: "RN-027", topic: "processo.importacao", all: [["processo", "processos"], ["portal cef", "cef"], ["importado", "importacao"], ["diario", "diariamente", "dia anterior"]], answer: "Os processos do dia anterior são importados diariamente do Portal CEF.", example: "Quando os processos do Portal CEF são importados?", source },
+  { id: "RN-028", topic: "processo.completude", all: [["processo", "importacao"], ["completude", "conferencia", "confere"], ["portal cef", "base local", "apos importar"]], answer: "Após a importação, o sistema confere a completude entre os processos do Portal CEF e a base local.", example: "O sistema confere a completude após importar processos?", source },
+
+  { id: "RN-030", topic: "publicacao.fontes", all: [["publicacao", "publicacoes"], ["fonte", "origem", "captura"], ["webjur", "portal cef"]], answer: "As fontes de captura de publicações são **WEBJUR** e **Portal CEF**.", example: "Quais são as fontes de captura das publicações?", source },
+  { id: "RN-031", topic: "publicacao.webjur", all: [["webjur"], ["publicacao", "publicacoes"], ["cnj", "numero do processo", "consulta", "captura", "retorna", "busca"]], answer: "Diariamente, o WEBJUR consulta os processos da base pelo número CNJ e retorna as publicações existentes.", example: "Como o WEBJUR busca as publicações?", source },
+  { id: "RN-032", topic: "publicacao.portal-cef", all: [["portal cef", "cef"], ["publicacao", "publicacoes"], ["30 dias", "ultimos 30", "periodo", "quantos dias"]], answer: "O Portal CEF fornece diariamente as publicações dos últimos 30 dias.", example: "Quantos dias de publicações o Portal CEF fornece?", source },
+  { id: "RN-033", topic: "publicacao.duplicidade", all: [["publicacao", "publicacoes"], ["duplicidade", "duplicada", "duplicado"]], answer: "A duplicidade se aplica a **todas as publicações**. A verificação usa o **Código do cliente** como chave e considera uma janela fixa de **7 dias para trás**, contada pela **Data de disponibilização**.", example: "Qual é a regra de duplicidade de publicação?", source },
+  { id: "RN-034", topic: "publicacao.status-inicial", all: [["publicacao", "publicacoes"], ["nova", "incluida", "entra"], ["status", "pendente"]], answer: "Toda nova publicação entra no sistema com o status **Pendente**.", example: "Com qual status entra uma nova publicação?", source },
+  { id: "RN-035", topic: "publicacao.status", all: [["publicacao", "publicacoes"], ["status"], ["quais", "previstos", "possiveis", "pendente", "tratado"]], answer: "Os status previstos para publicações são **Pendente** e **Tratado**.", example: "Quais são os status de uma publicação?", source },
+
+  { id: "RN-040", topic: "prazo.obrigatorios", all: [["prazo"], ["obrigatorio", "obrigatorios", "exige", "precisa"], ["campo", "dados", "preencher"]], answer: "Um prazo exige **Data do prazo**, **Data fatal**, **Tipo**, **Processo vinculado** e **Responsável**.", example: "Quais campos são obrigatórios para um prazo?", source },
+  { id: "RN-041", topic: "prazo.origem-processo", all: [["prazo"], ["criado pelo processo", "a partir do processo", "no processo"], ["vinculo", "link", "publicacao"]], answer: "O prazo criado pelo processo fica vinculado somente ao processo e não ativa link de publicação.", example: "Prazo criado pelo processo fica vinculado à publicação?", source },
+  { id: "RN-042", topic: "prazo.origem-publicacao", all: [["prazo"], ["criado pela publicacao", "a partir da publicacao", "na publicacao"], ["vinculo", "link", "processo"]], answer: "O prazo criado pela publicação fica vinculado ao processo e à publicação, ativando o link da publicação.", example: "Como fica o vínculo do prazo criado pela publicação?", source },
+  { id: "RN-043", topic: "prazo.inclusao-permissao", all: [["prazo"], ["incluir", "criar", "novo"], ["usuario", "permissao", "quem pode"]], answer: "Qualquer usuário pode incluir um novo prazo, sem necessidade de permissão especial.", example: "Qualquer usuário pode criar um prazo?", source },
+  { id: "RN-044", topic: "prazo.alteracao-comum", all: [["prazo"], ["alterar", "mudar"], ["tipo", "advogado", "responsavel", "data do prazo"], ["usuario", "qualquer"]], answer: "Qualquer usuário pode alterar **Tipo de prazo**, **Advogado responsável** e **Data do prazo**.", example: "Qualquer usuário pode alterar o tipo e o responsável do prazo?", source },
+  { id: "RN-045", topic: "prazo.data-fatal", all: [["prazo"], ["data fatal", "prazo fatal"], ["alterar", "mudar", "permissao", "usuario"]], answer: "A **Data fatal** só pode ser alterada por usuário com permissão específica em **Configuração de Usuário**, no campo **Alteração**.", example: "Qualquer usuário pode mudar a data fatal do prazo?", source },
+  { id: "RN-046", topic: "prazo.descricao", all: [["prazo"], ["descricao"], ["alterar", "mudar", "permissao", "usuario"]], answer: "A **Descrição do prazo** só pode ser alterada por usuário com permissão específica em **Configuração de Usuário**, no campo **Alteração**.", example: "Quem pode alterar a descrição do prazo?", source },
+  { id: "RN-047", topic: "prazo.novo-tipo", all: [["tipo de prazo", "tipo"], ["novo", "criar", "incluir"], ["tela", "onde", "somente"]], answer: "Um novo Tipo de prazo deve ser criado somente na tela **Tipo de Prazo**.", example: "Onde devo criar um novo tipo de prazo?", source },
+  { id: "RN-048", topic: "prazo.cancelamento", all: [["prazo"], ["cancelado", "cancelar", "cancelamento"], ["historico", "pendente", "lista", "some"]], answer: "O prazo cancelado permanece no histórico e deixa de aparecer na listagem de pendentes.", example: "O que acontece com um prazo cancelado?", source },
+
+  { id: "RN-050", topic: "audiencia.natureza", all: [["audiencia"], ["prazo", "subtipo"], ["publicacao", "manual", "origem", "nasce"]], answer: "A audiência é um subtipo de prazo com fluxo próprio e pode ser criada a partir de uma publicação ou de um evento manual.", example: "A audiência é um tipo de prazo e como pode ser criada?", source },
+  { id: "RN-051", topic: "audiencia.obrigatorios", all: [["audiencia"], ["obrigatorio", "obrigatorios", "exige", "precisa"], ["campo", "dados", "preencher"]], answer: "Uma audiência exige **Data/hora**, **Endereço ou link**, **UF**, **Tipo**, **Processo vinculado** e **Responsável**.", example: "Quais campos são obrigatórios para uma audiência?", source },
+  { id: "RN-052", topic: "audiencia.advogado", all: [["audiencia"], ["responsavel"], ["advogado"], ["interno", "externo", "atribui"]], answer: "O responsável pela audiência atribui um advogado interno ou externo.", example: "Quem atribui o advogado interno ou externo da audiência?", source },
+  { id: "RN-053", topic: "audiencia.realizacao", all: [["audiencia"], ["realizada", "realizacao"], ["controle", "controla", "sistema"]], answer: "O sistema controla se a audiência foi realizada.", example: "O sistema controla a realização da audiência?", source },
+  { id: "RN-054", topic: "audiencia.concluir", all: [["audiencia"], ["concluir", "conclusao", "botao"], ["habilita", "obrigatorio", "preenchido"]], answer: "A ação **Concluir** só é habilitada depois que todos os itens obrigatórios da audiência são preenchidos.", example: "Quando o botão Concluir da audiência é habilitado?", source },
+  { id: "RN-055", topic: "audiencia.kpi", all: [["audiencia"], ["dashboard", "kpi", "indicador"], ["dia", "hoje"]], answer: "As audiências do dia alimentam o KPI de Audiências do Dashboard.", example: "Quais audiências alimentam o KPI do dashboard?", source },
+  { id: "RN-056", topic: "audiencia.resultado", all: [["audiencia"], ["resultado", "final", "finalizar"], ["tratado", "cancelado", "registrado"]], answer: "O resultado da audiência deve ser registrado como **Tratado** ou **Cancelado**.", example: "Como deve ser registrado o resultado da audiência?", source },
+  { id: "RN-057", topic: "audiencia.acesso", all: [["audiencia"], ["acesso", "acessar", "usuario"], ["configuracao", "prazo", "restrito", "permissao"]], answer: "O acesso ao módulo de Audiências é restrito aos usuários definidos nas configurações de Prazo.", example: "Quem pode acessar o módulo de audiências?", source },
+  { id: "RN-058", topic: "audiencia.duplicidade", all: [["audiencia"], ["mesma data", "duplicada", "duplicidade", "duas"], ["codigo do cliente", "cliente"]], answer: "Não pode existir mais de uma audiência na mesma data para o mesmo **Código do cliente**.", example: "Pode haver duas audiências na mesma data para o mesmo código do cliente?", source },
+
+  { id: "RN-060", topic: "ateste.geracao-manual", all: [["ateste"], ["manual", "manualmente", "usuario"], ["atividade", "executada", "cobrada", "cef", "gerado"]], answer: "O ateste é gerado **manualmente pelos usuários** para registrar atividades já executadas que devem ser cobradas da CEF.", example: "O ateste é gerado manualmente para cobrar atividades executadas da CEF?", source },
+  { id: "RN-061", topic: "ateste.geracao-automatica", all: [["ateste"], ["automatico", "automaticamente", "automatica"], ["prazo", "cumprir", "cumprido", "cumpro"]], answer: "Não. Atualmente, os atestes são gerados **manualmente**. Não existe uma regra automática ativa para gerar atestes ao cumprir um prazo. Há apenas a previsão de um projeto futuro para automatizar a geração quando determinados prazos forem cumpridos.", example: "Quando cumpro um prazo, o ateste sai automático?", source },
+  { id: "RN-062", topic: "ateste.validacao-pagamento", all: [["ateste"], ["pagamento"], ["protocolo", "codigo de protocolo"], ["validar", "validacao", "confirmar"]], answer: "A validação do pagamento do ateste é feita pelo **Código de protocolo** informado no momento da solicitação do ateste à CEF.", example: "Como o pagamento do ateste é validado pelo código de protocolo?", source },
+  { id: "RN-063", topic: "ateste.upload-pagamento", all: [["ateste", "pagamento"], ["upload", "arquivo"], ["pagamento", "recebido", "confirmar"], ["cef"]], answer: "O usuário pode fazer upload do arquivo de pagamento para confirmar os pagamentos recebidos da CEF.", example: "Posso enviar um arquivo para confirmar o pagamento do ateste recebido da CEF?", source },
+  { id: "RN-064", topic: "ateste.novo-tipo", all: [["tipo de ateste", "ateste"], ["novo", "criar", "incluir"], ["tela", "onde", "exclusivamente"]], answer: "Novos Tipos de Ateste devem ser criados exclusivamente na tela **Tipo de Ateste**.", example: "Onde devo criar um novo tipo de ateste?", source },
+  { id: "RN-065", topic: "ateste.historico", all: [["ateste"], ["historico"], ["auditoria", "mantido", "guardar"]], answer: "O histórico dos atestes é mantido para fins de auditoria.", example: "O histórico de atestes é mantido para auditoria?", source },
+
+  { id: "RN-090", topic: "mutirao.upload", all: [["mutirao"], ["planilha", "upload"], ["audiencia", "realizada", "processamento"]], answer: "O fluxo de Audiência Mutirão é processado pelo upload de uma planilha de audiências realizadas.", example: "Como começa o processamento da audiência mutirão?", source },
+  { id: "RN-091", topic: "mutirao.processo-existente", all: [["mutirao"], ["processo"], ["ja vinculado", "esta vinculado", "vinculado", "existente", "cadastrado"], ["recadastra", "recadastrado", "ateste", "prazo"]], answer: "Se o processo já estiver vinculado no Mutirão, ele não é recadastrado; são executadas somente as automações de ateste e prazo.", example: "O mutirão recadastra um processo que já está vinculado?", source },
+  { id: "RN-092", topic: "mutirao.processo-novo", all: [["mutirao"], ["processo"], ["nao vinculado", "nao existe", "sem vinculo"], ["cria", "cadastra", "vincula"]], answer: "Se não houver processo vinculado, o Mutirão cria e vincula um processo.", example: "O que ocorre no mutirão quando não existe processo vinculado?", source },
+  { id: "RN-093", topic: "mutirao.condicao-automacao", all: [["mutirao"], ["ateste", "atestes"], ["prazo", "prazos"], ["automacao", "automatic", "qual condicao"], ["sim", "condicao", "exige", "gera"]], strict: true, answer: "As automações de ateste e prazo do Mutirão exigem que **Audiência foi realizada?** esteja marcada como **Sim**.", example: "Qual condição gera atestes e prazos automáticos no mutirão?", source },
+  { id: "RN-094", topic: "mutirao.ateste-padrao", all: [["mutirao"], ["audiencia realizada", "realizada"], ["ateste"], ["conciliacao", "qual ateste", "qual", "gera"]], answer: "Uma audiência realizada no Mutirão gera o ateste **Audiência de Conciliação**.", example: "Qual ateste é gerado por audiência realizada no mutirão?", source },
+  { id: "RN-095", topic: "mutirao.ateste-acordo", all: [["mutirao"], ["acordo"], ["contestacao"], ["antes", "apos", "momento", "ateste"]], answer: "No Mutirão, acordo antes da contestação gera ateste **Antes**; após a contestação gera **Após**; se o momento não estiver definido, é gerado somente o ateste padrão.", example: "Qual ateste o acordo gera antes ou após a contestação no mutirão?", source },
+  { id: "RN-096", topic: "mutirao.responsavel-ateste", all: [["mutirao"], ["ateste"], ["responsavel"], ["direcionado", "quem", "definido"]], answer: "Os atestes do Mutirão são direcionados ao responsável definido na fonte complementar da regra de negócio.", example: "Para quem são direcionados os atestes do mutirão?", source },
+  { id: "RN-097", topic: "mutirao.condicao-prazo", all: [["mutirao"], ["prazo"], ["acordo", "quais condicoes"], ["audiencia realizada", "data", "condicao"]], answer: "A geração de prazos no Mutirão exige audiência realizada, data da audiência informada e **Teve acordo? = Sim**.", example: "Quais condições geram prazo no mutirão?", source },
+  { id: "RN-098", topic: "mutirao.datas-prazo", all: [["mutirao"], ["prazo", "data fatal"], ["dias uteis", "quantos dias", "calculo", "calcul"]], answer: "No Mutirão, a **Data do prazo** é 3 dias úteis após a audiência e a **Data fatal** é 15 dias úteis. O cálculo considera segunda a sexta e ignora feriados.", example: "Como são calculadas as datas dos prazos do mutirão?", source },
+  { id: "RN-099", topic: "mutirao.tipos-prazo", all: [["mutirao"], ["prazo", "prazos"], ["pagamento", "protocolar", "quais prazos", "tipo"]], answer: "O Mutirão gera os prazos **Pagamento acordo mutirão** e **Protocolar pagamento mutirão**, destinados ao responsável definido na fonte.", example: "Quais prazos são gerados pelo acordo no mutirão?", source },
+  { id: "RN-090M", topic: "mutirao.obrigacao-fazer", all: [["mutirao"], ["obrigacao de fazer"], ["providencia", "observacao"], ["prazo", "gera"]], answer: "Quando **Obrigação de Fazer** consta em Providências/Observações, o Mutirão gera um prazo adicional para o responsável definido na fonte.", example: "Obrigação de Fazer gera prazo adicional no mutirão?", source },
+  { id: "RN-091M", topic: "mutirao.sem-data", all: [["mutirao"], ["sem data", "data da audiencia"], ["ateste", "prazo"], ["gera", "gerado", "cria"]], strict: true, answer: "Sem a data da audiência, o Mutirão pode gerar atestes, mas não gera prazos.", example: "Sem data da audiência o mutirão gera ateste e prazo?", source },
+
+  { id: "RN-080", topic: "processo.detalhe-nova-aba", all: [["detalhe do processo", "visualizar processo"], ["aba", "janela"], ["nova", "abre", "sempre"]], answer: "O detalhe do processo sempre abre em uma nova aba.", example: "O detalhe do processo abre em uma nova aba?", source },
+  { id: "RN-081", topic: "processo.url-parametro", all: [["url"], ["detalhe do processo", "processo"], ["parametro", "parametrizada", "configurada"], ["sistema", "tela"]], answer: "A URL do detalhe do processo deve ser parametrizada na tela **Parâmetros do sistema**.", example: "Onde é parametrizada a URL do detalhe do processo?", source }
+];
+
+function groupMatched(text: string, alternatives: string[]): boolean {
+  return alternatives.some((term) => text.includes(normalize(term)));
+}
+
+export function interpretBusinessRule(question: string): InterpretedRule | null {
+  const text = normalize(question);
+  if (!text) return null;
+
+  const candidates = businessRules.map((rule) => {
+    const canonicalExample = text === normalize(rule.example);
+    const matchedGroups = rule.all.filter((group) => groupMatched(text, group)).length;
+    const requiredGroups = rule.all.length;
+    const coverage = matchedGroups / requiredGroups;
+    const subjectMatched = groupMatched(text, rule.all[0]);
+    const anyBonus = rule.any?.some((term) => text.includes(normalize(term))) ? 0.05 : 0;
+    const interpretable = subjectMatched && matchedGroups >= 2 && (rule.strict ? coverage === 1 : coverage >= 0.66);
+    const confidence = canonicalExample ? 1 : interpretable ? Math.min(0.99, 0.6 + coverage * 0.35 + anyBonus) : 0;
+    const specificity = rule.all.reduce((total, group) => {
+      const lengths = group.map(normalize).filter((term) => text.includes(term)).map((term) => term.length);
+      return total + (lengths.length > 0 ? Math.max(...lengths) : 0);
+    }, 0);
+    return { rule, confidence, specificity };
+  }).filter((candidate) => candidate.confidence >= 0.83)
+    .sort((a, b) => b.confidence - a.confidence || b.specificity - a.specificity || b.rule.all.length - a.rule.all.length);
+
+  const selected = candidates[0];
+  return selected ? { rule: selected.rule, confidence: selected.confidence } : null;
+}
+
+export function answerBusinessRule(question: string): string | null {
+  const interpreted = interpretBusinessRule(question);
+  if (!interpreted) return null;
+
+  const text = normalize(question);
+  if (interpreted.rule.id === "RN-024" && text.includes("sem responsavel")) {
+    return "Não. **Todo processo deve possuir pelo menos um responsável** vinculado; portanto, ele não deve permanecer sem responsável.";
+  }
+  return interpreted.rule.answer;
+}

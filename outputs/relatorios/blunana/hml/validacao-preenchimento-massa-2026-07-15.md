@@ -11,15 +11,16 @@ Data: 2026-07-15
 | Usuario | Cliente, Nome, Email e Papel aceitos; formulario habilitado |
 | Configuracao do Prazo | Combinacao completa aceita; formulario habilitado |
 | Processo | Obrigatorios preenchidos; formulario habilitado |
-| Configuracao de Publicacao | Regra confirmada: Area do Cliente e Responsavel obrigatorios; Tipo de Acao opcional |
-| Configuracao de Processos | Regra confirmada: Area do Cliente e Responsavel obrigatorios; Tipo de Acao opcional |
+| Configuracao de Publicacao | Area do Cliente + Responsavel habilitaram Salvar; Tipo de Acao permaneceu vazio |
+| Configuracao de Processos | Area do Cliente + Responsavel habilitaram Salvar; Tipo de Acao permaneceu vazio |
 
 ## Regra corrigida
 
 - Em ambas as configuracoes, Area do Cliente e Responsavel devem ser selecionados para habilitar Salvar.
 - Tipo de Acao e opcional.
 - A Area pode aparecer preenchida inicialmente, mas a selecao e necessaria para validar o formulario.
-- O Playwright ainda identifica o componente interno da Area como desabilitado; trata-se de uma pendencia do seletor da automacao, nao de uma divergencia da regra funcional.
+- O navegador confirmou que o campo fica habilitado apos o carregamento do modal; o validador foi ajustado para aguardar esse estado.
+- Os dois modais foram cancelados sem clicar em Salvar.
 
 ## Seguranca
 

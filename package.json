@@ -9,6 +9,11 @@
   "scripts": {
     "test": "npm run agent:ask -- \"teste\"",
     "build": "tsc -p tsconfig.json",
+    "test:rules": "ts-node external-agent/tests/business-rules.test.ts",
+    "test:battery": "npm run build && ts-node external-agent/tests/question-battery.test.ts",
+    "test:navigation": "npm run build && ts-node external-agent/tests/directed-navigation.test.ts",
+    "query:directed:prod": "cross-env APP_ENV=prod ALLOW_PLAYWRIGHT=true ts-node external-agent/tools/test-directed-query.ts",
+    "inspect:user-actions:prod": "cross-env APP_ENV=prod ALLOW_PLAYWRIGHT=true ts-node external-agent/tools/inspect-user-actions.ts",
     "start": "ts-node external-agent/api/server.ts",
     "agent:support": "ts-node external-agent/index.ts",
     "agent:ask": "npm run agent:support",
@@ -23,7 +28,8 @@
     "aprofundar:menu:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true DEEP_GROUP=menu HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/aprofundar-configuracoes-hml.ts",
     "validar:massa:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/validar-massa-hml.ts",
     "listar:opcoes:massa:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/listar-opcoes-massa-hml.ts",
-    "validar:obrigatoriedade:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/validar-obrigatoriedade-hml.ts"
+    "validar:obrigatoriedade:hml": "cross-env APP_ENV=hml ALLOW_HML_MAPPING=true HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/validar-obrigatoriedade-hml.ts",
+    "verificar:duplicidade:prod": "cross-env APP_ENV=prod HEADLESS=true CAPTURE_SCREENSHOTS=false ts-node crawler-interface/verificar-duplicidade-publicacao-prod.ts"
   },
   "keywords": [],
   "author": "",

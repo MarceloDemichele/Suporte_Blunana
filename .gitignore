@@ -295,6 +295,9 @@ FakesAssemblies/
 .ntvs_analysis.dat
 node_modules/
 
+# Evidências temporárias de navegação direcionada (podem conter dados operacionais)
+outputs/runtime-evidence/
+
 # Visual Studio 6 build log
 *.plg
 

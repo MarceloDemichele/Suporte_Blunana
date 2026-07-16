@@ -1,52 +1,49 @@
-# Memoria funcional aprofundada - Publicações
+# Publicações — memória funcional
 
-Ambiente: HML
-
+Ambiente validado: HML
 Rota: `/@rocha_juridico_hml/app/publicacoes`
 
-## Tela principal
+## Objetivo
 
-### Filtros e campos
+Consultar, filtrar e tratar publicações recebidas, incluindo a análise de possíveis duplicidades.
 
-- Status
-- Area
-- Tipo de acao
-- Responsavel
+## Indicadores
+
+- Base de publicações
+- Resultado filtrado
+- Recebidas hoje
+- Tratadas hoje
+- Em aberto
+
+## Filtros
+
+- Status (a tela inicia com **Pendente**)
+- Área
+- Tipo de ação
+- Responsável
 - Tratado
-- Codigo do Cliente
-- Numero do processo
-- Data recebimento (de)
-- Data recebimento (ate)
-- Data publicacao (de)
-- Data publicacao (ate)
-- Data disponibilizacao (de)
-- Data disponibilizacao (ate)
-- Data Tratado (de)
-- Data Tratado (ate)
+- Código do cliente
+- Número do processo
+- Recebimento: de/até
+- Publicação: de/até
+- Disponibilização: de/até
+- Tratamento: de/até
 
-### Botoes funcionais
+## Resultado e ações
 
-- Possiveis duplicidades
-- Close
-- Limpar filtros
+A grade apresenta Status, Número do processo, Área, Tipo de ação, Responsável, Data da publicação, Data de disponibilização, texto da Publicação, Lido, Tratado e Ação. A tela permite limpar filtros e exportar os resultados.
 
-### Colunas
+Cada linha apresenta duas ações visuais. Como podem iniciar tratamento ou alteração, elas não foram acionadas nesta coleta.
 
-- Status
-- Numero do processo
-- Area
-- Tipo de Acao
-- Responsavel
-- Data publicacao
-- Data de disponibilizacao
-- Publicacao
-- Lido
-- Tratado
-- Acao
+Com processo autorizado, as ações foram identificadas como **Tratar publicação** e **Visualizar processo** na tela geral. No detalhe do processo também existe **Criar prazo** a partir da publicação. Uma consulta sem o status padrão confirmou publicações já tratadas.
 
-## Regras de seguranca da coleta
+### Possíveis duplicidades
 
-- Nenhum valor de tabela foi coletado.
-- Nenhum formulario foi submetido.
-- Nenhuma alteracao foi confirmada.
-- Nenhuma screenshot foi capturada.
+Abre uma janela para revisar publicações relacionadas ao mesmo processo. A janela apresenta o resultado paginado e pode ser fechada sem alterar registros. Na sessão validada não havia item disponível para revisão.
+
+A regra funcional considera uma janela fixa de **7 dias para trás**, calculada pela **Data de disponibilização**, e exige o **mesmo Código do cliente**. O número do processo igual, sem código do cliente igual, não caracteriza duplicidade.
+
+## Limites da validação
+
+- Nenhuma publicação foi marcada, lida ou tratada.
+- Dados reais da grade não foram registrados na memória.

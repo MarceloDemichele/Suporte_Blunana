@@ -88,3 +88,22 @@ Rota: `/@rocha_juridico_hml/app/configuracao_de_ateste`
 - O campo Nome do ateste aceitou o valor ficticio e habilitou o formulario.
 - Na regra, a Area de Ateste existente foi selecionada com sucesso.
 - O teste foi cancelado sem salvar.
+
+## Ciclo de gravacao validado
+
+- Um Tipo de Ateste ficticio identificado pelo prefixo `AUTO-SUPORTE-HML` foi criado com sucesso.
+- O registro criado foi localizado pelo filtro de Tipo de Ateste.
+- A manutencao permitiu alterar o nome e controlar o campo Ativo.
+- A alteracao do nome foi confirmada na listagem.
+- Ao final do teste, o mesmo registro foi inativado para nao interferir na operacao de HML.
+- Nenhum registro preexistente foi alterado.
+
+## Ciclo de gravacao da Regra de Ateste - 2026-07-15
+
+- Foi criado um Tipo de Ateste auxiliar com identificacao ficticia.
+- Uma Regra de Ateste foi criada para uma Area de Ateste existente e vinculada somente ao tipo auxiliar.
+- O campo Valor utiliza formato monetario.
+- A regra nasce ativa por padrao, conforme informado no modal.
+- A manutencao permitiu alterar o valor e inativar a regra.
+- A regra e o tipo auxiliar ficaram inativos ao final do teste.
+- Nenhum registro preexistente foi alterado.

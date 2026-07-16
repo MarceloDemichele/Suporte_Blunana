@@ -9,6 +9,7 @@ require("../config/loadEnv");
 const paths_1 = require("./config/paths");
 const search_1 = require("./core/search");
 const answer_1 = require("./core/answer");
+const question_router_1 = require("./core/question-router");
 const pergunta = process.argv.slice(2).join(" ");
 if (!pergunta) {
     console.log("Informe uma pergunta.");
@@ -27,7 +28,8 @@ const fontes = [
 async function executar() {
     const resultados = (0, search_1.buscar)(pergunta, fontes);
     let runtimeEvidence = null;
-    if (!(0, answer_1.temRespostaOperacional)(pergunta, resultados) && process.env.ALLOW_PLAYWRIGHT === "true") {
+    const answerRoute = (0, question_router_1.decideAnswerRoute)(pergunta);
+    if (answerRoute.route === "LIVE_PLATFORM" && !(0, answer_1.temRespostaOperacional)(pergunta, resultados) && process.env.ALLOW_PLAYWRIGHT === "true") {
         const { consultarAplicacao } = await import("./providers/playwright.provider.js");
         runtimeEvidence = await consultarAplicacao(pergunta);
     }
@@ -35,7 +37,7 @@ async function executar() {
     fs_1.default.mkdirSync("external-agent/logs", { recursive: true });
     const fileName = `resposta-${new Date()
         .toISOString()
-        .replace(/[:.]/g, "-")}.md`;
+        .replace(/[:.]/g, "-")}-${process.pid}-${process.hrtime.bigint().toString().slice(-8)}.md`;
     const outputPath = path_1.default.join("external-agent/logs", fileName);
     fs_1.default.writeFileSync(outputPath, resposta, "utf-8");
     console.log(resposta);

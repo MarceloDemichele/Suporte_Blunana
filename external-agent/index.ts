@@ -4,6 +4,7 @@ import "../config/loadEnv";
 import { paths } from "./config/paths";
 import { buscar } from "./core/search";
 import { gerarResposta, temRespostaOperacional } from "./core/answer";
+import { decideAnswerRoute } from "./core/question-router";
 
 const pergunta = process.argv.slice(2).join(" ");
 
@@ -26,8 +27,9 @@ const fontes = [
 async function executar() {
 const resultados = buscar(pergunta, fontes);
 let runtimeEvidence = null;
+const answerRoute = decideAnswerRoute(pergunta);
 
-if (!temRespostaOperacional(pergunta, resultados) && process.env.ALLOW_PLAYWRIGHT === "true") {
+if (answerRoute.route === "LIVE_PLATFORM" && !temRespostaOperacional(pergunta, resultados) && process.env.ALLOW_PLAYWRIGHT === "true") {
   const { consultarAplicacao } = await import("./providers/playwright.provider.js");
   runtimeEvidence = await consultarAplicacao(pergunta);
 }
@@ -38,7 +40,7 @@ fs.mkdirSync("external-agent/logs", { recursive: true });
 
 const fileName = `resposta-${new Date()
   .toISOString()
-  .replace(/[:.]/g, "-")}.md`;
+  .replace(/[:.]/g, "-")}-${process.pid}-${process.hrtime.bigint().toString().slice(-8)}.md`;
 
 const outputPath = path.join("external-agent/logs", fileName);
 

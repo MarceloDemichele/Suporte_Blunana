@@ -1,79 +1,59 @@
-# Memoria funcional aprofundada - Processos
+# Processos — memória funcional
 
-Ambiente: HML
-
+Ambiente validado: HML
 Rota: `/@rocha_juridico_hml/app/processos1`
 
-## Tela principal
+## Objetivo
 
-### Filtros e campos
+Consultar a base de processos, combinar critérios de pesquisa, abrir o tratamento de um processo e iniciar uma inclusão manual.
+
+## Indicadores
+
+- Base de processos
+- Processos em andamento
+- Processos encerrados
+- Recebidos hoje
+- Tratados hoje
+- Em aberto
+
+## Filtros
 
 - Situação
 - Status
 - Área
-- Tipo de acao
-- Responsavel
-- Codigo do cliente
+- Tipo de ação
+- Responsável
+- Código do cliente
 - Extinto
-- Numero do processo
-- Data de recebimento (de)
-- Data de recebimento (ate)
-- Data tratado (de)
-- Data tratado (ate)
+- Número do processo
+- Data de recebimento: de/até
+- Data de tratamento: de/até
 
-### Botoes funcionais
+Os filtros são aplicados automaticamente. A seleção de mais de um filtro acrescenta critérios à mesma pesquisa. O botão **Limpar filtros** restaura a consulta.
 
-- Adicionar Processo
-- Limpar filtros
+## Resultado e ações
 
-### Colunas
+A grade apresenta Situação, Status, Número do processo, Área, Tipo de ação, Responsável, Data de recebimento, Data de tratamento e Ação. Há exportação da consulta e a ação da linha é identificada como **Visualizar e tratar processo**.
 
-- Stituação
-- Status
-- Numero do processo
-- Area
-- Tipo de acao
-- Responsavel
-- Data recebimento
-- Data tratado
-- Acao
+### Adicionar Processo
 
-## Modal - Adicionar Processo
+Abre um modal com:
 
-### Campos
-
-- Codigo do Cliente *
-- Codigo Terceirizacao
-- Numero do Processo *
+- Código do Cliente (obrigatório)
+- Código Terceirização
+- Número do Processo (obrigatório)
 - Comarca
 - Foro
 - Vara
-- Area *
-- Tipo de Acao *
+- Área (obrigatório)
+- Tipo de Ação (obrigatório)
 - Nome da Parte
-- CPF - CNPJ
+- CPF/CNPJ
 
-### Botoes
+O modal possui **Cancelar** e **Salvar**. Nesta validação ele foi aberto e cancelado, sem gravação.
 
-- Cancelar
-- Salvar
+## Limites da validação
 
-## Regras de seguranca da coleta
-
-- Nenhum valor de tabela foi coletado.
-- Nenhum formulario foi submetido.
-- Nenhuma alteracao foi confirmada.
-- Nenhuma screenshot foi capturada.
-
-## Validacao de obrigatoriedade
-
-- O botao Salvar fica habilitado com o formulario vazio, mas o modal permanece aberto apos o clique.
-- A tela exige Codigo do Cliente, Numero do Processo, Area e Tipo de Acao.
-- Nenhuma gravacao foi realizada no teste.
-
-## Validacao com massa ficticia
-
-- Codigo do Cliente e Numero do Processo aceitaram os formatos ficticios definidos.
-- Area e Tipo de Acao foram selecionados com sucesso.
-- Apos o preenchimento dos obrigatorios, o botao Salvar ficou habilitado.
-- O teste foi cancelado sem salvar.
+- A tela de detalhes foi aberta e suas oito seções e formulários disponíveis foram mapeados com um processo autorizado pela equipe de suporte.
+- Nenhum processo real foi criado ou alterado.
+- Dados exibidos na grade não foram transcritos para a documentação.

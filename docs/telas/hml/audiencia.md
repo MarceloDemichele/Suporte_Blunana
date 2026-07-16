@@ -1,49 +1,39 @@
-# Memoria funcional aprofundada - Audiência
+# Audiência — memória funcional
 
-Ambiente: HML
-
+Ambiente validado: HML
 Rota: `/@rocha_juridico_hml/app/audiencia`
 
-## Tela principal
+## Objetivo
 
-### Filtros e campos
+Consultar e acompanhar audiências, seus alertas, responsáveis, dados de realização e registros associados.
 
-- Status
-- Area
-- Tipo de acao
-- Responsavel
-- Codigo do Cliente
-- Numero do Processo
-- Data audiencia (de)
-- Data audiencia (ate)
-- Data tratado (de)
-- Data tratado (ate)
+## Atalhos de período
 
-### Botoes funcionais
-
+- Hoje
+- Amanhã
+- Semana
+- Mês
+- Próxima semana 1, 2, 3 e 4
 - Ver todas
-- Limpar filtros
-- Exportar filtros para Excel
 
-### Colunas
+## Filtros
 
 - Status
-- Alerta
-- Nº Processo
-- Data
-- Hora
-- UF
-- Tipo
-- Nome da Parte
-- Advogado Audiência
-- Link/Endereço
-- Diário de Bordo
-- Subs
-- Ação
+- Área
+- Tipo de ação
+- Responsável
+- Código do cliente
+- Número do processo
+- Data da audiência: de/até
+- Data de tratamento: de/até
 
-## Regras de seguranca da coleta
+## Resultado e ações
 
-- Nenhum valor de tabela foi coletado.
-- Nenhum formulario foi submetido.
-- Nenhuma alteracao foi confirmada.
-- Nenhuma screenshot foi capturada.
+A grade apresenta Status, Alerta, Número do processo, Data, Hora, UF, Tipo, Nome da parte, Advogado da audiência, Link/Endereço, Diário de bordo, Subs e Ação.
+
+A tela permite **Limpar filtros** e **Exportar filtros para Excel**. Em um processo autorizado, edição e histórico foram abertos a partir do detalhe. Também foi confirmada a ação de exclusão, protegida por uma etapa de confirmação.
+
+## Limites da validação
+
+- Nenhuma audiência foi tratada ou alterada.
+- O formulário de edição e o histórico foram mapeados sem salvar alterações.

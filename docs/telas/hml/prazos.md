@@ -1,50 +1,42 @@
-# Memoria funcional aprofundada - Prazos
+# Prazos — memória funcional
 
-Ambiente: HML
-
+Ambiente validado: HML
 Rota: `/@rocha_juridico_hml/app/novos_prazos`
 
-## Tela principal
+## Objetivo
 
-### Filtros e campos
+Consultar e acompanhar prazos processuais por período, situação e responsável.
 
-- Status
-- Tipo de prazo
-- Area
-- Tipo de acao
-- Responsavel
-- Codigo do Cliente
-- Numero do processo
-- Data prazo (de)
-- Data prazo (ate)
-- Data fatal (de)
-- Data fatal (ate)
-- Data tratado (de)
-- Data tratado (ate)
+## Atalhos de período
 
-### Botoes funcionais
-
+- Hoje
+- Amanhã
+- Semana
+- Mês
+- Próxima semana 1, 2, 3 e 4
 - Ver todas
-- Limpar filtros
-- Exportar filtros para Excel
 
-### Colunas
+## Filtros
 
-- Status
-- Numero do Processo
-- Area
+- Status (a tela inicia com **Pendente**)
 - Tipo de prazo
-- Nome da parte
-- Data do prazo
-- Data fatal
-- Advogado Responsavel
-- Descricao
-- Diario de bordo
-- Acao
+- Área
+- Tipo de ação
+- Responsável
+- Código do cliente
+- Número do processo
+- Data do prazo: de/até
+- Data fatal: de/até
+- Data de tratamento: de/até
 
-## Regras de seguranca da coleta
+## Resultado e ações
 
-- Nenhum valor de tabela foi coletado.
-- Nenhum formulario foi submetido.
-- Nenhuma alteracao foi confirmada.
-- Nenhuma screenshot foi capturada.
+A grade apresenta Status, Número do Processo, Área, Tipo de prazo, Nome da parte, Data do prazo, Data fatal, Advogado responsável, Descrição, Diário de bordo e Ação.
+
+A tela permite **Limpar filtros** e **Exportar filtros para Excel**. As ações de prazo foram confirmadas como **Editar prazo**, **Histórico** e **Excluir prazo**. A exclusão exige confirmação.
+
+## Limites da validação
+
+- Nenhum prazo foi tratado ou alterado.
+- Edição e histórico foram abertos com processo autorizado e fechados sem salvar.
+- Regra complementar posterior esclareceu a permissão: qualquer usuário pode alterar Tipo de prazo, Advogado responsável e Data do prazo; Data fatal e Descrição exigem permissão específica na Configuração de Usuário, campo Alteração.

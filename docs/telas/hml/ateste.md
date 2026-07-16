@@ -1,105 +1,44 @@
-# Memoria funcional aprofundada - Ateste
+# Ateste — memória funcional
 
-Ambiente: HML
-
+Ambiente validado: HML
 Rota: `/@rocha_juridico_hml/app/ateste`
 
-## Tela principal
+## Objetivo
 
-### Filtros e campos
+Consultar atestes, acompanhar valores por situação e importar retornos de pagamento.
 
-- Status
-- Numero do processo
-- Area de ateste
-- Tipo de ateste
-- Criacao (de)
-- Criacao (ate)
-- Solicitacao (de)
-- Solicitacao (ate)
-- Recebimento (de)
-- Recebimento (ate)
+## Indicadores
 
-### Botoes funcionais
+- Atestes recebidos
+- Atestes rejeitados
+- Valor a receber
 
-- Limpar filtros
-- Upload Pagamento
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-- Editar ateste
-- Visualizar processo
-- Excluir ateste
-
-### Colunas
+## Filtros
 
 - Status
-- Numero do Processo
-- Data do ateste
-- Area de ateste
+- Número do processo
+- Área de ateste
 - Tipo de ateste
-- Solicitado
-- Recebido
-- Rejeitado
-- Valor
-- Acao
+- Criação: de/até
+- Solicitação: de/até
+- Recebimento: de/até
 
-## Regras de seguranca da coleta
+O campo **Tipo de ateste** depende da seleção prévia da **Área de ateste**.
 
-- Nenhum valor de tabela foi coletado.
-- Nenhum formulario foi submetido.
-- Nenhuma alteracao foi confirmada.
-- Nenhuma screenshot foi capturada.
+## Resultado e ações
+
+A grade apresenta Status, Número do processo, Data do ateste, Área de ateste, Tipo de ateste, Solicitado, Recebido, Rejeitado, Valor e Ação.
+
+As ações da linha são **Editar ateste**, **Visualizar processo** e **Excluir ateste**. A exclusão é destrutiva e não deve ser usada em exploração funcional sem um registro fictício previamente autorizado.
+
+No detalhe do processo, o ateste também oferece **Histórico**. Edição, histórico e confirmação de exclusão foram validados com processo autorizado; todas as telas foram fechadas sem persistência.
+
+### Upload de Pagamento
+
+O modal aceita arquivos CSV, TXT, XLS e XLSX. A prévia apresenta Data, Código, Lote, Status e Mensagem. O botão **Importar** permanece desabilitado até a seleção de um arquivo.
+
+## Limites da validação
+
+- O modal de upload foi aberto e cancelado sem selecionar arquivo.
+- Nenhum ateste foi editado, visualizado ou excluído.
+- Números de processos e valores reais não foram transcritos para a documentação.

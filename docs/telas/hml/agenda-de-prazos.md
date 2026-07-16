@@ -4,210 +4,58 @@ Ambiente: HML
 
 Rota: `/@rocha_juridico_hml/app/agenda_nova`
 
-## Prazos 0
+## Objetivo
 
-### Filtros e campos
+A Agenda apresenta, em calendario mensal, os Prazos, Audiencias e Tarefas vinculados a cada dia.
 
-- Data selecionada
-- Status
-- Area
-- Tipo de acao
-- Responsavel
-- Codigo do cliente
-- Numero do processo
+## Navegacao do calendario
 
-### Botoes funcionais
+- Botao Hoje retorna para a data atual.
+- Setas anterior e proxima navegam entre os meses.
+- Cada dia informa a quantidade de Prazos, Audiencias e Tarefas, ou `Sem itens`.
+- Selecionar um dia atualiza a data e as listas exibidas abaixo do calendario.
 
-- Hoje
-- Selecionar 2026-06-28
-- Selecionar 2026-06-29
-- Selecionar 2026-06-30
-- Selecionar 2026-07-01
-- Selecionar 2026-07-02
-- Selecionar 2026-07-03
-- Selecionar 2026-07-04
-- Selecionar 2026-07-05
-- Selecionar 2026-07-06
-- Selecionar 2026-07-07
-- Selecionar 2026-07-08
-- Selecionar 2026-07-09
-- Selecionar 2026-07-10
-- Selecionar 2026-07-11
-- Selecionar 2026-07-12
-- Selecionar 2026-07-13
-- Selecionar 2026-07-14
-- Selecionar 2026-07-15
-- Selecionar 2026-07-16
-- Selecionar 2026-07-17
-- Selecionar 2026-07-18
-- Selecionar 2026-07-19
-- Selecionar 2026-07-20
-- Selecionar 2026-07-21
-- Selecionar 2026-07-22
-- Selecionar 2026-07-23
-- Selecionar 2026-07-24
-- Selecionar 2026-07-25
-- Selecionar 2026-07-26
-- Selecionar 2026-07-27
-- Selecionar 2026-07-28
-- Selecionar 2026-07-29
-- Selecionar 2026-07-30
-- Selecionar 2026-07-31
-- Selecionar 2026-08-01
-- Selecionar 2026-08-02
-- Selecionar 2026-08-03
-- Selecionar 2026-08-04
-- Selecionar 2026-08-05
-- Selecionar 2026-08-06
-- Selecionar 2026-08-07
-- Selecionar 2026-08-08
-- Prazos 0
-- Audiencias 0
-- Tarefas 0
-- Limpar filtros
+## Abas de resultados
 
-### Colunas
+- Prazos.
+- Audiencias.
+- Tarefas.
 
-- Nao identificado.
+Cada aba informa a quantidade de itens para a data selecionada.
 
-## Audiencias 0
+## Filtros comuns
 
-### Filtros e campos
+- Data selecionada.
+- Status.
+- Area.
+- Tipo de acao.
+- Responsavel.
+- Codigo do cliente.
+- Numero do processo.
+- Limpar filtros.
 
-- Data selecionada
-- Status
-- Area
-- Tipo de acao
-- Responsavel
-- Codigo do cliente
-- Numero do processo
+## Estrutura dos resultados
 
-### Botoes funcionais
+- Os itens sao agrupados por Classificacao.
+- Prazos exibem numero do processo, Data Prazo, Data Fatal e Status.
+- Audiencias exibem numero do processo, Responsavel, Data de audiencia e Status.
+- Tarefas exibem numero do processo, Responsavel, Data Prazo, Data Fatal e Status.
+- Ha controle de itens por pagina e navegacao entre paginas.
 
-- Hoje
-- Selecionar 2026-06-28
-- Selecionar 2026-06-29
-- Selecionar 2026-06-30
-- Selecionar 2026-07-01
-- Selecionar 2026-07-02
-- Selecionar 2026-07-03
-- Selecionar 2026-07-04
-- Selecionar 2026-07-05
-- Selecionar 2026-07-06
-- Selecionar 2026-07-07
-- Selecionar 2026-07-08
-- Selecionar 2026-07-09
-- Selecionar 2026-07-10
-- Selecionar 2026-07-11
-- Selecionar 2026-07-12
-- Selecionar 2026-07-13
-- Selecionar 2026-07-14
-- Selecionar 2026-07-15
-- Selecionar 2026-07-16
-- Selecionar 2026-07-17
-- Selecionar 2026-07-18
-- Selecionar 2026-07-19
-- Selecionar 2026-07-20
-- Selecionar 2026-07-21
-- Selecionar 2026-07-22
-- Selecionar 2026-07-23
-- Selecionar 2026-07-24
-- Selecionar 2026-07-25
-- Selecionar 2026-07-26
-- Selecionar 2026-07-27
-- Selecionar 2026-07-28
-- Selecionar 2026-07-29
-- Selecionar 2026-07-30
-- Selecionar 2026-07-31
-- Selecionar 2026-08-01
-- Selecionar 2026-08-02
-- Selecionar 2026-08-03
-- Selecionar 2026-08-04
-- Selecionar 2026-08-05
-- Selecionar 2026-08-06
-- Selecionar 2026-08-07
-- Selecionar 2026-08-08
-- Prazos 0
-- Audiencias 0
-- Tarefas 0
-- Limpar filtros
-- Limpar filtros
+## Acoes dos itens
 
-### Colunas
+- Cada item apresenta tres botoes por icone.
+- Os icones nao possuem rotulo textual acessivel suficiente para comprovar sua finalidade.
+- As acoes nao foram acionadas nesta etapa porque podem alterar dados; permanecem como ponto de validacao controlada.
 
-- Nao identificado.
+## Regras confirmadas
 
-## Tarefas 0
+- A selecao de uma data alimenta simultaneamente as contagens das tres abas.
+- A troca de aba mantem a data selecionada e aplica o mesmo conjunto de filtros ao tipo de item escolhido.
+- Dias sem registros exibem mensagem de ausencia de itens.
 
-### Filtros e campos
+## Seguranca da coleta
 
-- Data selecionada
-- Status
-- Area
-- Tipo de acao
-- Responsavel
-- Codigo do cliente
-- Numero do processo
-
-### Botoes funcionais
-
-- Hoje
-- Selecionar 2026-06-28
-- Selecionar 2026-06-29
-- Selecionar 2026-06-30
-- Selecionar 2026-07-01
-- Selecionar 2026-07-02
-- Selecionar 2026-07-03
-- Selecionar 2026-07-04
-- Selecionar 2026-07-05
-- Selecionar 2026-07-06
-- Selecionar 2026-07-07
-- Selecionar 2026-07-08
-- Selecionar 2026-07-09
-- Selecionar 2026-07-10
-- Selecionar 2026-07-11
-- Selecionar 2026-07-12
-- Selecionar 2026-07-13
-- Selecionar 2026-07-14
-- Selecionar 2026-07-15
-- Selecionar 2026-07-16
-- Selecionar 2026-07-17
-- Selecionar 2026-07-18
-- Selecionar 2026-07-19
-- Selecionar 2026-07-20
-- Selecionar 2026-07-21
-- Selecionar 2026-07-22
-- Selecionar 2026-07-23
-- Selecionar 2026-07-24
-- Selecionar 2026-07-25
-- Selecionar 2026-07-26
-- Selecionar 2026-07-27
-- Selecionar 2026-07-28
-- Selecionar 2026-07-29
-- Selecionar 2026-07-30
-- Selecionar 2026-07-31
-- Selecionar 2026-08-01
-- Selecionar 2026-08-02
-- Selecionar 2026-08-03
-- Selecionar 2026-08-04
-- Selecionar 2026-08-05
-- Selecionar 2026-08-06
-- Selecionar 2026-08-07
-- Selecionar 2026-08-08
-- Prazos 0
-- Audiencias 0
-- Tarefas 0
-- Limpar filtros
-- Limpar filtros
-- Limpar filtros
-
-### Colunas
-
-- Nao identificado.
-
-## Regras de seguranca da coleta
-
-- Nenhum valor de tabela foi coletado.
-- Nenhum formulario foi submetido.
-- Nenhuma alteracao foi confirmada.
-- Nenhuma screenshot foi capturada.
+- A navegacao foi somente leitura.
+- Nenhum prazo, audiencia ou tarefa foi alterado.
+- Numeros de processos, nomes de responsaveis e valores momentaneos nao foram persistidos nesta memoria.

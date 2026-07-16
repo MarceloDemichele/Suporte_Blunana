@@ -2,30 +2,23 @@ import { Request, Response } from "express";
 import { paths } from "../../config/paths";
 import { buscar } from "../../core/search";
 import { gerarResposta, temRespostaOperacional } from "../../core/answer";
+import { classificarPergunta } from "../../core/classification";
+import { decideAnswerRoute } from "../../core/question-router";
+
+const TASK_FIXA = "Suporte ao cliente";
 
 export async function assistant(req: Request, res: Response) {
-  const start = Date.now();
+  const { ID_TASK: idTask, question } = req.body;
+  const idTaskAusente = idTask === undefined || idTask === null || String(idTask).trim() === "";
 
-  const projectName = process.env.PROJECT_NAME || "Blunana / Suporte";
-  const { question, environment = process.env.APP_ENV || "prod", user = "cliente" } = req.body;
-
-  if (!question) {
+  if (idTaskAusente || !question || typeof question !== "string") {
+    const campos = [idTaskAusente ? "ID_TASK" : "", !question ? "question" : ""].filter(Boolean);
     return res.status(400).json({
-      success: false,
-      project: projectName,
-      environment,
-      user,
-      mustUse: true,
-      answer: "Campo obrigatório: question",
-      confidence: 0,
-      action: "CONTACT_SUPPORT",
-      sources: [],
-      runtimeEvidence: null,
-      metadata: {
-        matchedFiles: 0,
-        usedPlaywright: false,
-        executionTimeMs: Date.now() - start
-      }
+      ID_TASK: idTask ?? null,
+      TASK: TASK_FIXA,
+      CLASSIFICACAO: "DUVIDA",
+      QUESTION: typeof question === "string" ? question : "",
+      ANSWER: `Campo(s) obrigatório(s): ${campos.join(", ")}`
     });
   }
 
@@ -41,40 +34,24 @@ export async function assistant(req: Request, res: Response) {
   ];
 
   const results = buscar(question, fontes);
-
   let runtimeEvidence = null;
-  let usedPlaywright = false;
+  const answerRoute = decideAnswerRoute(question);
 
-  if (!temRespostaOperacional(question, results) && process.env.ALLOW_PLAYWRIGHT === "true") {
+  if (answerRoute.route === "LIVE_PLATFORM" && !temRespostaOperacional(question, results) && process.env.ALLOW_PLAYWRIGHT === "true") {
     const { consultarAplicacao } = await import("../../providers/playwright.provider.js");
-
     runtimeEvidence = await consultarAplicacao(question);
-    usedPlaywright = runtimeEvidence?.used === true;
   }
 
-  const answer = gerarResposta(question, results, runtimeEvidence);
-
-  const confidence =
-    results.length >= 3 ? 90 :
-    results.length >= 1 ? 75 :
-    usedPlaywright ? 60 :
-    0;
+  const classificacao = classificarPergunta(question);
+  const answer = classificacao === "BUG"
+    ? "Não foi localizada uma resposta comprovada para esta ocorrência. Será necessária uma análise manual da equipe responsável."
+    : gerarResposta(question, results, runtimeEvidence);
 
   return res.json({
-    success: results.length > 0 || usedPlaywright,
-    project: projectName,
-    environment,
-    user,
-    mustUse: true,
-    answer,
-    confidence,
-    action: results.length > 0 ? "NONE" : "CONTACT_SUPPORT",
-    sources: results.map((r) => r.file),
-    runtimeEvidence,
-    metadata: {
-      matchedFiles: results.length,
-      usedPlaywright,
-      executionTimeMs: Date.now() - start
-    }
+    ID_TASK: idTask,
+    TASK: TASK_FIXA,
+    CLASSIFICACAO: classificacao,
+    QUESTION: question,
+    ANSWER: answer
   });
 }

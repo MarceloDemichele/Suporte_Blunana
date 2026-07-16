@@ -57,3 +57,11 @@ Rota: `/@rocha_juridico_hml/app/configuracao_de_processos`
 - A Area do Cliente pode aparecer inicialmente preenchida, mas precisa ser selecionada para validar o formulario.
 - Area do Cliente e Responsavel sao obrigatorios para habilitar Salvar.
 - Tipo de Acao e opcional.
+- Regra validada no navegador: somente Area do Cliente e Responsavel habilitaram Salvar, mantendo Tipo de Acao vazio.
+- Nenhuma gravacao foi realizada.
+
+## Validacao controlada de criacao e alteracao - 2026-07-15
+
+- Uma configuracao ficticia foi criada com Area do Cliente, Tipo de Acao e Responsavel.
+- O registro criado foi localizado, editado e inativado ao final do ciclo.
+- Nenhum registro preexistente foi alterado.
