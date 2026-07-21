@@ -1,5 +1,7 @@
 # Changelog
 
+- Em 2026-07-20, o agente passou a registrar interações em histórico append-only, aceitar feedback aprovado/rejeitado/corrigido e reutilizar somente respostas aprovadas com a mesma assinatura semântica; consultas de dados atuais e perguntas indefinidas foram excluídas da aprendizagem reutilizável.
+
 ## 2026-07-14
 
 - Em 2026-07-15, o Playwright passou a executar consultas direcionadas e somente leitura para usuário, processo, publicação, prazo, audiência e ateste; perfil e processo foram validados em PROD pela porta 3333, com sanitização de evidências e sem alterações.
@@ -63,3 +65,23 @@
 - Removido o escopo ativo ligado ao contexto antigo de automação.
 - Consolidado o agente externo e o agente interno para análise de documentação, navegação e atualização documental.
 - Mantido o foco em docs, engineering-reversa, support e outputs como base de contexto.
+# 2026-07-20
+
+- Fallback de telas passou a resolver a capacidade por entidade conhecida e exclusão de rotas mais específicas, cobrindo descrições livres sem lista de verbos.
+- Inclusão manual de Processo separada em regra de capacidade (`posso`) e procedimento (`como`), preservando a pendência sobre perfis autorizados.
+- Fallback operacional passou a reconhecer conjugações por radical, corrigindo perguntas como `Como incluo uma audiência?`.
+- Falhas e timeouts da navegação passaram a ser isolados; a API mantém resposta controlada em vez de retornar erro HTTP não tratado.
+- Consulta de Publicações passou a aceitar Código do cliente, limpar o status padrão e tratar mensagens de grade vazia como zero registros.
+- Adicionado interpretador semântico híbrido pela Responses API, com schema estrito, catálogo fechado de capacidades, validação de filtros, timeout e fallback local.
+- Adicionada consulta reversa de Processo por Código do cliente, incluindo extração do formato `00.000.00000/0000` e preenchimento direcionado do filtro.
+- Criada camada estruturada de interpretação anterior a qualquer busca ou navegação; roteador, pesquisa, Playwright e resposta passaram a compartilhar intenção, entidade, ação, origem e identificadores.
+- Consultas de existência (`está na base`, `consta no sistema`) passaram a acionar navegação direcionada quando acompanhadas de um identificador específico.
+- Documentados os sete caminhos de inclusão de prazo e seus vínculos; o agente agora prioriza a origem citada na pergunta (Processo, Publicação, Prazo ou Audiência).
+- Interpretação de procedimentos ampliada para formas verbais e nominais equivalentes, com proteção para não confundir pedidos de passo a passo com perguntas normativas de permissão.
+- Agente passou a orientar a inclusão de audiência comum como subtipo de prazo em `Processos > Eventos Relevantes > Adicionar prazo`, preservando separadamente o fluxo de Audiência Mutirão.
+- Corrigida a orientação final da tela de Prazos: o botão `Visualizar` abre o `Detalhe do processo`.
+- Bateria do agente ampliada de 189 para 228 perguntas, com paráfrases reais de regras, consultas, procedimentos e dados dinâmicos.
+- Corrigidos falsos positivos entre regra de negócio, consulta de tela e consulta dinâmica de usuário específico.
+- Navegação direcionada passou a reconhecer consultas de permissões e acessos sem exigir o formato rígido com hífen.
+- Consulta de perfil passou a tolerar combinações como `perfil do usuária`; o caso de regressão foi validado pela API local e em consulta PROD somente leitura.
+- Evidências registradas em `outputs/relatorios/blunana/validacao-parafrases-agente-2026-07-20.md`.

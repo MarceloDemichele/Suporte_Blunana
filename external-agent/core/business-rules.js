@@ -29,6 +29,7 @@ exports.businessRules = [
     { id: "RN-026", topic: "prazo.processo", all: [["prazo"], ["processo"], ["vinculado", "vinculo", "precisa", "deve"]], answer: "Todo prazo deve estar vinculado a um processo.", example: "Todo prazo precisa estar vinculado a um processo?", source },
     { id: "RN-027", topic: "processo.importacao", all: [["processo", "processos"], ["portal cef", "cef"], ["importado", "importacao"], ["diario", "diariamente", "dia anterior"]], answer: "Os processos do dia anterior são importados diariamente do Portal CEF.", example: "Quando os processos do Portal CEF são importados?", source },
     { id: "RN-028", topic: "processo.completude", all: [["processo", "importacao"], ["completude", "conferencia", "confere"], ["portal cef", "base local", "apos importar"]], answer: "Após a importação, o sistema confere a completude entre os processos do Portal CEF e a base local.", example: "O sistema confere a completude após importar processos?", source },
+    { id: "RN-029", topic: "processo.inclusao-manual", all: [["processo"], ["manual", "manualmente"], ["incluir", "inclusao", "adicionar", "cadastrar"]], answer: "Sim. O sistema permite a inclusão manual em **Menu > Processos > Adicionar Processo**. A funcionalidade está comprovada, mas os perfis autorizados a executá-la ainda precisam ser validados.", example: "Posso incluir um processo manualmente?", source: "docs/regras-negocio/processos.md" },
     { id: "RN-030", topic: "publicacao.fontes", all: [["publicacao", "publicacoes"], ["fonte", "origem", "captura"], ["webjur", "portal cef"]], answer: "As fontes de captura de publicações são **WEBJUR** e **Portal CEF**.", example: "Quais são as fontes de captura das publicações?", source },
     { id: "RN-031", topic: "publicacao.webjur", all: [["webjur"], ["publicacao", "publicacoes"], ["cnj", "numero do processo", "consulta", "captura", "retorna", "busca"]], answer: "Diariamente, o WEBJUR consulta os processos da base pelo número CNJ e retorna as publicações existentes.", example: "Como o WEBJUR busca as publicações?", source },
     { id: "RN-032", topic: "publicacao.portal-cef", all: [["portal cef", "cef"], ["publicacao", "publicacoes"], ["30 dias", "ultimos 30", "periodo", "quantos dias"]], answer: "O Portal CEF fornece diariamente as publicações dos últimos 30 dias.", example: "Quantos dias de publicações o Portal CEF fornece?", source },
@@ -100,9 +101,9 @@ function interpretBusinessRule(question) {
     const selected = candidates[0];
     return selected ? { rule: selected.rule, confidence: selected.confidence } : null;
 }
-function answerBusinessRule(question) {
-    const interpreted = interpretBusinessRule(question);
-    if (!interpreted)
+function answerBusinessRule(question, reference) {
+    const interpreted = reference ? { rule: exports.businessRules.find((rule) => rule.id === reference), confidence: 1 } : interpretBusinessRule(question);
+    if (!interpreted?.rule)
         return null;
     const text = normalize(question);
     if (interpreted.rule.id === "RN-024" && text.includes("sem responsavel")) {

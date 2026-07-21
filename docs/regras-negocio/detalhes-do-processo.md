@@ -46,6 +46,20 @@ Em registros existentes foram confirmadas as ações **Tratar publicação** e *
 
 Lista eventos do processo e oferece **Adicionar prazo**. O formulário contém Tipo de prazo, Advogado responsável, Prazo, Data fatal, Descrição e Documentos. Salvar fica desabilitado até o preenchimento exigido.
 
+Para incluir uma **audiência comum**, use **Adicionar prazo** e selecione o tipo de audiência, pois a audiência é um subtipo de prazo. Esse procedimento não se aplica à **Audiência Mutirão**, que possui fluxo próprio.
+
+## Caminhos para incluir prazo
+
+O sistema oferece sete entradas, com vínculos diferentes conforme a origem:
+
+1. **Processos > Visualizar e tratar processo > Eventos Relevantes > Adicionar prazo**: vincula somente ao processo.
+2. **Processos > Visualizar e tratar processo > Publicação > Adicionar prazo**: vincula ao processo e à publicação.
+3. **Publicação > Editar publicação > Há prazo para publicação? > Incluir prazo**: vincula ao processo e à publicação.
+4. **Prazo > Editar prazo > Incluir prazo**: vincula somente ao processo.
+5. **Prazo > Incluir prazo**: vincula somente ao processo.
+6. **Audiência > Editar audiência > Incluir prazo**: vincula somente ao processo.
+7. **Audiência > Incluir prazo**: vincula somente ao processo.
+
 Prazos e audiências existentes apresentam **Editar**, **Histórico** e **Excluir**. Histórico mostra autor, data e alterações. Excluir sempre abre confirmação e exige uma segunda ação explícita.
 
 A edição de prazo apresenta status, datas, tipo, responsável, descrição, observações do processo, diário de bordo, prazos relacionados e documentos. A edição de audiência inclui data, hora, tipo, endereço, UF, responsável, advogado interno/externo, descrição, diário de bordo, documentos e marcações de acordo, subs, ateste, carta de preposição, substabelecimento, contestação, cancelamento e conclusão.

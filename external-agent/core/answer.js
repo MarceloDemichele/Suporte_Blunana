@@ -35,7 +35,8 @@ function formatDirectedAnswer(evidence) {
         .slice(0, 8)
         .map((item) => `**${item.column}:** ${item.value}`)
         .join("; ");
-    return `A consulta direcionada encontrou **${evidence.count}** registro(s) para **${evidence.query}**. ${values || "A listagem foi localizada, mas não havia campos textuais suficientes para resumir."} Nenhuma alteração foi realizada.`;
+    const summary = values ? `${values}.` : "A listagem foi localizada, mas não havia campos textuais suficientes para resumir.";
+    return `A consulta direcionada encontrou **${evidence.count}** registro(s) para **${evidence.query}**. ${summary} Nenhuma alteração foi realizada.`;
 }
 function normalizar(texto) {
     return texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -142,7 +143,8 @@ function temIntencaoDeConsulta(pergunta) {
     return [
         "consultar", "consulto", "consulta", "pesquisar", "pesquiso", "pesquisa",
         "localizar", "localizo", "buscar", "busco", "encontrar", "encontro",
-        "acessar", "acesso", "onde vejo", "como vejo", "visualizar"
+        "acessar", "acesso", "onde vejo", "como vejo", "visualizar", "qual menu",
+        "em qual menu", "qual caminho", "onde fica", "listar", "mostrar"
     ].some((sinal) => texto.includes(sinal));
 }
 function respostaProcedimental(pergunta, resultados) {
@@ -237,8 +239,8 @@ function respostaProcedimental(pergunta, resultados) {
     }
     return null;
 }
-function temRespostaOperacional(pergunta, resultados) {
-    const route = (0, question_router_1.decideAnswerRoute)(pergunta);
+function temRespostaOperacional(pergunta, resultados, interpretation) {
+    const route = (0, question_router_1.decideAnswerRoute)(pergunta, interpretation);
     if (route.route === "LIVE_PLATFORM")
         return false;
     if (route.route === "OPERATIONAL_PROCEDURE" || route.route === "BUSINESS_RULE" || route.route === "SCREEN_CONSULTATION")
@@ -247,8 +249,11 @@ function temRespostaOperacional(pergunta, resultados) {
     return (!intencaoDeConsulta && (0, business_rules_1.interpretBusinessRule)(pergunta) !== null) ||
         (intencaoDeConsulta && ((0, screen_consultation_1.findScreenConsultationGuide)(pergunta) !== null || localizarMenu(pergunta, resultados, null) !== null));
 }
-function gerarResposta(pergunta, resultados, runtimeEvidence = null) {
-    const route = (0, question_router_1.decideAnswerRoute)(pergunta);
+function gerarResposta(pergunta, resultados, runtimeEvidence = null, interpretation) {
+    const route = (0, question_router_1.decideAnswerRoute)(pergunta, interpretation);
+    if (route.route === "UNKNOWN" && interpretation?.ambiguity) {
+        return "Não foi possível identificar com segurança a intenção, a entidade ou o registro mencionado. Informe, por exemplo, se a dúvida é sobre **processo, publicação, prazo, audiência, ateste ou usuário** e inclua o número ou nome quando se tratar de um registro específico.";
+    }
     if (route.route === "LIVE_PLATFORM") {
         const evidence = runtimeEvidence?.evidence;
         if (isDirectedEvidence(evidence))
@@ -256,21 +261,21 @@ function gerarResposta(pergunta, resultados, runtimeEvidence = null) {
         return "Essa pergunta depende de uma consulta atual na plataforma, pois envolve dados de um usuário ou registro específico. A navegação automática disponível ainda não coletou evidência suficiente desse cadastro; será necessária uma consulta manual no Blunana antes de responder.";
     }
     if (route.route === "OPERATIONAL_PROCEDURE") {
-        const respostaDaAcao = (0, operational_actions_1.answerOperationalAction)(pergunta);
+        const respostaDaAcao = (0, operational_actions_1.answerOperationalAction)(pergunta, route.reference);
         if (respostaDaAcao)
             return respostaDaAcao;
     }
-    const intencaoDeConsulta = temIntencaoDeConsulta(pergunta);
-    if (intencaoDeConsulta) {
-        const respostaDaTela = (0, screen_consultation_1.answerScreenConsultation)(pergunta);
+    if (route.route === "SCREEN_CONSULTATION") {
+        const respostaDaTela = (0, screen_consultation_1.answerScreenConsultation)(pergunta, route.reference);
         if (respostaDaTela)
             return respostaDaTela;
     }
-    if (!intencaoDeConsulta) {
-        const respostaDeRegra = (0, business_rules_1.answerBusinessRule)(pergunta);
+    if (route.route === "BUSINESS_RULE") {
+        const respostaDeRegra = (0, business_rules_1.answerBusinessRule)(pergunta, route.reference);
         if (respostaDeRegra)
             return respostaDeRegra;
     }
+    const intencaoDeConsulta = temIntencaoDeConsulta(pergunta);
     const textoNormalizado = normalizar(pergunta);
     const perguntaSobreAtesteAutomaticoAoCumprirPrazo = textoNormalizado.includes("prazo") &&
         textoNormalizado.includes("ateste") &&

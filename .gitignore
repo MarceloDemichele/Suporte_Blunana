@@ -298,6 +298,9 @@ node_modules/
 # Evidências temporárias de navegação direcionada (podem conter dados operacionais)
 outputs/runtime-evidence/
 
+# Histórico local e base aprovada do agente (podem conter dados de suporte)
+data/agent-learning/
+
 # Visual Studio 6 build log
 *.plg
 

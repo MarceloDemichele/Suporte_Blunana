@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import type { QuestionInterpretation } from "./question-interpreter";
 
 export type SearchResult = { file: string; content: string; score: number };
 
@@ -52,4 +53,9 @@ export function buscar(pergunta: string, fontes: string[]): SearchResult[] {
   }).filter((item) => item.score > 0)
     .sort((a, b) => b.score - a.score)
     .slice(0, 10);
+}
+
+export function buscarComInterpretacao(interpretation: QuestionInterpretation, fontes: string[]): SearchResult[] {
+  const semanticQuery = [interpretation.original, ...interpretation.concepts].join(" ");
+  return buscar(semanticQuery, fontes);
 }

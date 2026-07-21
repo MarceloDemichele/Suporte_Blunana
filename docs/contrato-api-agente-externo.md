@@ -36,6 +36,10 @@ Porta padrão: `3333`
 
 O retorno contém somente os cinco campos definidos pelo contrato.
 
+Antes de consultar documentos ou a plataforma, o serviço cria uma interpretação interna estruturada da pergunta. Essa estrutura não é exposta no retorno e, portanto, não altera o contrato público da API.
+
+Em modo híbrido, essa interpretação pode usar modelo de linguagem com JSON estrito. Falhas do provedor não alteram o contrato: o serviço utiliza o fallback local e mantém o mesmo formato de resposta.
+
 ## Classificação
 
 - `BUG`: erro, falha, problema, tela que não funciona ou comportamento incorreto.

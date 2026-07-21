@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.buscar = buscar;
+exports.buscarComInterpretacao = buscarComInterpretacao;
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
 function listarArquivos(dir) {
@@ -61,4 +62,8 @@ function buscar(pergunta, fontes) {
     }).filter((item) => item.score > 0)
         .sort((a, b) => b.score - a.score)
         .slice(0, 10);
+}
+function buscarComInterpretacao(interpretation, fontes) {
+    const semanticQuery = [interpretation.original, ...interpretation.concepts].join(" ");
+    return buscar(semanticQuery, fontes);
 }

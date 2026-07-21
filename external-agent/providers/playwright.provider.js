@@ -25,14 +25,26 @@ function extractNamedUser(question) {
     const afterDash = question.match(/\s[-–—]\s*([^?]+)\??\s*$/)?.[1];
     if (afterDash)
         return clean(afterDash);
+    const afterAccessTerm = question.match(/(?:permiss[^\s]*|acessos?|perfil(?:\s+de\s+acesso)?|usu[^\s]*)\s+(?:de|da|do)?\s*[:\-]?\s*([^?]+)\??$/i)?.[1];
+    if (afterAccessTerm)
+        return clean(afterAccessTerm);
     const named = question.match(/(?:usu[aá]ri[oa]|perfil(?: de acesso)? (?:de|da|do))\s*(?:de|da|do)?\s*[:\-]?\s*([A-ZÁÀÂÃÉÊÍÓÔÕÚÇ][^?]+)\??$/i)?.[1];
     return clean(named || "");
 }
-function planDirectedQuery(question) {
+function planDirectedQuery(question, interpretation) {
     const text = normalize(question);
-    const processNumber = question.match(/\b\d{20}\b/)?.[0] || "";
-    if (text.includes("perfil de acesso") || text.includes("permissoes da usuaria") || text.includes("permissoes do usuario") || text.includes("acessos da usuaria") || text.includes("acessos do usuario")) {
-        const name = extractNamedUser(question);
+    const processNumber = interpretation?.identifiers.processNumber || question.match(/\b\d{20}\b/)?.[0] || "";
+    const clientCode = interpretation?.identifiers.clientCode || interpretation?.filters.find((filter) => filter.field === "CLIENT_CODE")?.value || question.match(/\b\d{2}\.\d{3}\.\d{4,6}\/\d{4}\b/)?.[0] || "";
+    if (clientCode && (interpretation?.entity === "PUBLICATION" || text.includes("publicacao"))) {
+        return { target: "publication", value: clientCode, routeLabel: "Publicações", filterKind: "client-code" };
+    }
+    if (clientCode && (interpretation?.entity === "PROCESS" || text.includes("processo"))) {
+        return { target: "process", value: clientCode, routeLabel: "Processos", filterKind: "client-code" };
+    }
+    const userAccessIntent = ["perfil de acesso", "perfil da usuaria", "perfil do usuario", "permissoes", "acessos", "nivel de acesso", "pode acessar", "tem acesso"].some((term) => text.includes(term)) ||
+        (text.includes("perfil") && (text.includes("usuario") || text.includes("usuaria")));
+    if (userAccessIntent) {
+        const name = interpretation?.identifiers.userName || extractNamedUser(question);
         return name ? { target: "user", value: name, routeLabel: "Configuração Usuário", filterKind: "name" } : null;
     }
     if (!processNumber)
@@ -70,6 +82,12 @@ async function fillDirectedFilter(page, plan) {
         await field.waitFor({ state: "visible", timeout: 15000 });
         await field.fill(plan.value);
     }
+    else if (plan.filterKind === "client-code") {
+        await page.getByRole("button", { name: /limpar filtros/i }).first().click().catch(() => undefined);
+        const field = page.getByPlaceholder(/codigo do cliente/i).first();
+        await field.waitFor({ state: "visible", timeout: 15000 });
+        await field.fill(plan.value);
+    }
     else {
         const formatted = page.getByPlaceholder("0000000-00.0000.0.00.0000", { exact: true });
         if (await formatted.count()) {
@@ -94,7 +112,9 @@ async function extractTable(page, value) {
     const rows = [];
     for (let index = 0; index < limit; index += 1) {
         const cells = (await selected.nth(index).locator("td").allTextContents()).map(clean);
-        if (cells.some(Boolean))
+        const rowText = normalize(cells.join(" "));
+        const emptyState = /\bnenhum(?:a)?\b.*\bencontrad[oa]s?\b|\bnao (?:ha|existem?|foram localizados?)\b/.test(rowText);
+        if (cells.some(Boolean) && !emptyState)
             rows.push(cells);
     }
     return { columns, rows };
@@ -203,11 +223,11 @@ function saveSanitizedEvidence(question, evidence) {
     fs_1.default.writeFileSync(outputPath, serialized, "utf-8");
     return outputPath;
 }
-async function consultarAplicacao(pergunta) {
+async function consultarAplicacao(pergunta, interpretation) {
     if (process.env.ALLOW_PLAYWRIGHT !== "true") {
         return { used: false, evidence: "Playwright desabilitado." };
     }
-    const plan = planDirectedQuery(pergunta);
+    const plan = planDirectedQuery(pergunta, interpretation);
     const { browser, page } = await (0, login_1.loginBlunana)();
     try {
         if (plan) {

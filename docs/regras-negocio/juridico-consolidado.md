@@ -31,6 +31,7 @@ Escopo da fonte: Blunana.ai, Módulo Jurídico, julho de 2026.
 - `RN-026`: todo prazo deve ser vinculado a um processo.
 - `RN-027`: diariamente são importados do Portal CEF os processos do dia anterior.
 - `RN-028`: após a importação, o sistema confere a completude entre Portal CEF e base local.
+- `RN-029`: o sistema permite inclusão manual em Processos > Adicionar Processo; os perfis autorizados ainda precisam ser validados.
 
 ## Publicações
 

@@ -33,7 +33,7 @@ Consultar e acompanhar prazos processuais por período, situação e responsáve
 
 A grade apresenta Status, Número do Processo, Área, Tipo de prazo, Nome da parte, Data do prazo, Data fatal, Advogado responsável, Descrição, Diário de bordo e Ação.
 
-A tela permite **Limpar filtros** e **Exportar filtros para Excel**. As ações de prazo foram confirmadas como **Editar prazo**, **Histórico** e **Excluir prazo**. A exclusão exige confirmação.
+A tela permite **Limpar filtros** e **Exportar filtros para Excel**. Na listagem, o botão **Visualizar** abre o **Detalhe do processo**. Também foram identificadas as ações **Editar prazo**, **Histórico** e **Excluir prazo**; a exclusão exige confirmação.
 
 ## Limites da validação
 

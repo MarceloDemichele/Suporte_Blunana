@@ -4,6 +4,7 @@ import { answerScreenConsultation, findScreenConsultationGuide } from "./screen-
 import { answerOperationalAction } from "./operational-actions";
 import { decideAnswerRoute } from "./question-router";
 import { DirectedEvidence } from "../providers/playwright.provider";
+import type { QuestionInterpretation } from "./question-interpreter";
 
 type RuntimeEvidence = {
   evidence?: string | { menus?: Array<{ text?: string; href?: string }> } | DirectedEvidence;
@@ -42,7 +43,8 @@ function formatDirectedAnswer(evidence: DirectedEvidence): string {
     .slice(0, 8)
     .map((item) => `**${item.column}:** ${item.value}`)
     .join("; ");
-  return `A consulta direcionada encontrou **${evidence.count}** registro(s) para **${evidence.query}**. ${values || "A listagem foi localizada, mas não havia campos textuais suficientes para resumir."} Nenhuma alteração foi realizada.`;
+  const summary = values ? `${values}.` : "A listagem foi localizada, mas não havia campos textuais suficientes para resumir.";
+  return `A consulta direcionada encontrou **${evidence.count}** registro(s) para **${evidence.query}**. ${summary} Nenhuma alteração foi realizada.`;
 }
 
 function normalizar(texto: string): string {
@@ -154,7 +156,8 @@ function temIntencaoDeConsulta(pergunta: string): boolean {
   return [
     "consultar", "consulto", "consulta", "pesquisar", "pesquiso", "pesquisa",
     "localizar", "localizo", "buscar", "busco", "encontrar", "encontro",
-    "acessar", "acesso", "onde vejo", "como vejo", "visualizar"
+    "acessar", "acesso", "onde vejo", "como vejo", "visualizar", "qual menu",
+    "em qual menu", "qual caminho", "onde fica", "listar", "mostrar"
   ].some((sinal) => texto.includes(sinal));
 }
 
@@ -269,8 +272,8 @@ function respostaProcedimental(pergunta: string, resultados: SearchResult[]): st
   return null;
 }
 
-export function temRespostaOperacional(pergunta: string, resultados: SearchResult[]): boolean {
-  const route = decideAnswerRoute(pergunta);
+export function temRespostaOperacional(pergunta: string, resultados: SearchResult[], interpretation?: QuestionInterpretation): boolean {
+  const route = decideAnswerRoute(pergunta, interpretation);
   if (route.route === "LIVE_PLATFORM") return false;
   if (route.route === "OPERATIONAL_PROCEDURE" || route.route === "BUSINESS_RULE" || route.route === "SCREEN_CONSULTATION") return true;
   const intencaoDeConsulta = temIntencaoDeConsulta(pergunta);
@@ -278,8 +281,11 @@ export function temRespostaOperacional(pergunta: string, resultados: SearchResul
     (intencaoDeConsulta && (findScreenConsultationGuide(pergunta) !== null || localizarMenu(pergunta, resultados, null) !== null));
 }
 
-export function gerarResposta(pergunta: string, resultados: SearchResult[], runtimeEvidence: RuntimeEvidence = null): string {
-  const route = decideAnswerRoute(pergunta);
+export function gerarResposta(pergunta: string, resultados: SearchResult[], runtimeEvidence: RuntimeEvidence = null, interpretation?: QuestionInterpretation): string {
+  const route = decideAnswerRoute(pergunta, interpretation);
+  if (route.route === "UNKNOWN" && interpretation?.ambiguity) {
+    return "Não foi possível identificar com segurança a intenção, a entidade ou o registro mencionado. Informe, por exemplo, se a dúvida é sobre **processo, publicação, prazo, audiência, ateste ou usuário** e inclua o número ou nome quando se tratar de um registro específico.";
+  }
   if (route.route === "LIVE_PLATFORM") {
     const evidence = runtimeEvidence?.evidence;
     if (isDirectedEvidence(evidence)) return formatDirectedAnswer(evidence);
@@ -287,19 +293,21 @@ export function gerarResposta(pergunta: string, resultados: SearchResult[], runt
   }
 
   if (route.route === "OPERATIONAL_PROCEDURE") {
-    const respostaDaAcao = answerOperationalAction(pergunta);
+    const respostaDaAcao = answerOperationalAction(pergunta, route.reference);
     if (respostaDaAcao) return respostaDaAcao;
   }
 
-  const intencaoDeConsulta = temIntencaoDeConsulta(pergunta);
-  if (intencaoDeConsulta) {
-    const respostaDaTela = answerScreenConsultation(pergunta);
+  if (route.route === "SCREEN_CONSULTATION") {
+    const respostaDaTela = answerScreenConsultation(pergunta, route.reference);
     if (respostaDaTela) return respostaDaTela;
   }
-  if (!intencaoDeConsulta) {
-    const respostaDeRegra = answerBusinessRule(pergunta);
+
+  if (route.route === "BUSINESS_RULE") {
+    const respostaDeRegra = answerBusinessRule(pergunta, route.reference);
     if (respostaDeRegra) return respostaDeRegra;
   }
+
+  const intencaoDeConsulta = temIntencaoDeConsulta(pergunta);
 
   const textoNormalizado = normalizar(pergunta);
   const perguntaSobreAtesteAutomaticoAoCumprirPrazo =

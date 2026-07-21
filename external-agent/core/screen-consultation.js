@@ -40,14 +40,14 @@ exports.screenConsultationGuides = [
     },
     {
         screen: "Home",
-        aliases: ["home", "painel inicial", "dashboard"],
+        aliases: ["home", "painel inicial", "página inicial", "pagina inicial", "dashboard"],
         answer: "Acesse **Menu > Home** para consultar os indicadores de usuários, processos, publicações, prazos, audiências e atestes. Use **Atualizar** para renovar os indicadores e **Abrir painel** para acessar a tela operacional correspondente. Nos painéis de Prazos e Audiências, também estão disponíveis os períodos **Hoje**, **Amanhã**, **Semana** e **Próxima semana**.",
         source: "docs/telas/hml/home.md"
     },
     {
         screen: "Agenda de prazos",
         aliases: ["agenda de prazos", "agenda dos prazos", "agenda"],
-        answer: "Acesse **Menu > Agenda de prazos**. Selecione uma data no calendário e escolha a aba **Prazos**, **Audiências** ou **Tarefas**. Para restringir a consulta, utilize **Status**, **Área**, **Tipo de ação**, **Responsável**, **Código do cliente** e **Número do processo**; a data selecionada é mantida entre as abas.",
+        answer: "A **Agenda de prazos** demonstra, em um calendário mensal, os **Prazos**, **Audiências** e **Tarefas** vinculados a cada dia. Acesse **Menu > Agenda de prazos**, selecione uma data e escolha a aba correspondente. Para restringir os resultados, utilize **Status**, **Área**, **Tipo de ação**, **Responsável**, **Código do cliente** e **Número do processo**; a data selecionada é mantida entre as abas.",
         source: "docs/telas/hml/agenda-de-prazos.md"
     },
     {
@@ -65,7 +65,7 @@ exports.screenConsultationGuides = [
     {
         screen: "Prazos",
         aliases: ["prazos", "prazo"],
-        answer: "Acesse **Menu > Prazos** e use os atalhos de período ou filtros como **Status**, **Tipo de prazo**, **Área**, **Tipo de ação**, **Responsável**, **Código do cliente**, **Número do processo**, **Data do prazo**, **Data fatal** e **Data de tratamento**. A tela inicia com o status **Pendente**. Na listagem, use as ações para editar ou consultar o histórico.",
+        answer: "Acesse **Menu > Prazos** e use os atalhos de período ou filtros como **Status**, **Tipo de prazo**, **Área**, **Tipo de ação**, **Responsável**, **Código do cliente**, **Número do processo**, **Data do prazo**, **Data fatal** e **Data de tratamento**. A tela inicia com o status **Pendente**. Na listagem, o botão **Visualizar** abre o **Detalhe do processo**.",
         source: "docs/telas/hml/prazos.md"
     },
     {
@@ -96,6 +96,6 @@ function findScreenConsultationGuide(question) {
         .sort((a, b) => a.index - b.index || b.alias.length - a.alias.length);
     return matches[0]?.guide || null;
 }
-function answerScreenConsultation(question) {
-    return findScreenConsultationGuide(question)?.answer || null;
+function answerScreenConsultation(question, reference) {
+    return (reference ? exports.screenConsultationGuides.find((guide) => guide.screen === reference) : findScreenConsultationGuide(question))?.answer || null;
 }
