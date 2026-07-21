@@ -1,0 +1,69 @@
+{
+  "environment": "hml",
+  "prefix": "AUTO-SUPORTE-HML",
+  "runIdFormat": "yyyyMMdd-HHmmss",
+  "retentionHours": 24,
+  "allowedExistingOptions": {
+    "cliente": "{env.HML_TEST_CLIENT}",
+    "areaCliente": "{env.HML_TEST_CLIENT_AREA}",
+    "areaAteste": "{env.HML_TEST_ATTEST_AREA}",
+    "tipoAcao": "{env.HML_TEST_ACTION_TYPE}",
+    "tipoPrazo": "{env.HML_TEST_DEADLINE_TYPE}",
+    "responsavel": "{env.HML_TEST_RESPONSIBLE}",
+    "papelUsuario": "{env.HML_TEST_USER_ROLE}"
+  },
+  "records": {
+    "tipoAteste": {
+      "nome": "AUTO-SUPORTE-HML-ATESTE-{runId}"
+    },
+    "regraAteste": {
+      "areaAteste": "{allowedExistingOptions.areaAteste}",
+      "tipoAteste": "{records.tipoAteste.nome}",
+      "valor": "1,00"
+    },
+    "usuario": {
+      "cliente": "{allowedExistingOptions.cliente}",
+      "nome": "AUTO SUPORTE HML {runId}",
+      "email": "auto-suporte-hml+{runId}@example.com",
+      "celular": "",
+      "papel": "{allowedExistingOptions.papelUsuario}",
+      "permissoes": {
+        "concluirPrazo": false,
+        "excluirRegistro": false,
+        "alteracao": false,
+        "visualizaEstrutura": false
+      }
+    },
+    "configuracaoPublicacao": {
+      "cliente": "{allowedExistingOptions.cliente}",
+      "areaCliente": "{allowedExistingOptions.areaCliente}",
+      "tipoAcao": "{allowedExistingOptions.tipoAcao}",
+      "responsavel": "{allowedExistingOptions.responsavel}"
+    },
+    "configuracaoPrazo": {
+      "cliente": "{allowedExistingOptions.cliente}",
+      "areaCliente": "{allowedExistingOptions.areaCliente}",
+      "tipoAcao": "{allowedExistingOptions.tipoAcao}",
+      "tipoPrazo": "{allowedExistingOptions.tipoPrazo}",
+      "responsavel": "{allowedExistingOptions.responsavel}"
+    },
+    "configuracaoProcesso": {
+      "cliente": "{allowedExistingOptions.cliente}",
+      "areaCliente": "{allowedExistingOptions.areaCliente}",
+      "tipoAcao": "{allowedExistingOptions.tipoAcao}",
+      "responsavel": "{allowedExistingOptions.responsavel}"
+    },
+    "processo": {
+      "codigoCliente": "AUTO-HML-{runId}",
+      "codigoTerceirizacao": "AUTO-TERC-{runId}",
+      "numeroProcesso": "0000001-00.2099.8.99.9999",
+      "comarca": "TESTE HML",
+      "foro": "TESTE HML",
+      "vara": "TESTE HML",
+      "area": "{allowedExistingOptions.areaCliente}",
+      "tipoAcao": "{allowedExistingOptions.tipoAcao}",
+      "nomeParte": "PARTE FICTICIA HML {runId}",
+      "cpfCnpj": ""
+    }
+  }
+}

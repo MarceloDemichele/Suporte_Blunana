@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 
-const env = process.env.APP_ENV || "dev";
+const env = process.env.APP_ENV || "prod";
 
 dotenv.config({
     path: `.env.${env}`,

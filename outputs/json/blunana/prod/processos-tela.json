@@ -1,0 +1,293 @@
+{
+  "capturedAt": "2026-07-15T16:24:05.385Z",
+  "environment": "prod",
+  "mode": "read-only",
+  "title": "Rocha",
+  "path": "/@rocha_juridico/app/processos1",
+  "headings": [],
+  "labels": [
+    "Situação",
+    "Status",
+    "Área",
+    "Tipo de acao",
+    "Responsavel",
+    "Codigo do cliente",
+    "Extinto",
+    "Numero do processo",
+    "Data de recebimento (de)",
+    "Data de recebimento (ate)",
+    "Data tratado (de)",
+    "Data tratado (ate)"
+  ],
+  "fields": [
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-25",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-31",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-37",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-43",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-49",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-53",
+      "placeholder": "Codigo do cliente",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-58",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-62",
+      "placeholder": "0000000-00.0000.0.00.0000",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-65",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-69",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-73",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-77",
+      "placeholder": "dd/mm/aaaa",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "select",
+      "type": "",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "input-v-84",
+      "placeholder": "",
+      "ariaLabel": "",
+      "required": false,
+      "disabled": false
+    }
+  ],
+  "buttons": [
+    {
+      "text": "",
+      "ariaLabel": "Hide menu",
+      "title": "",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Hide menu",
+      "title": "",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Change language",
+      "title": "",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Change theme",
+      "title": "",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "ariaLabel": "Enter fullscreen",
+      "title": "",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "S",
+      "ariaLabel": "Open user data",
+      "title": "",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "Adicionar Processo",
+      "ariaLabel": "",
+      "title": "",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "Limpar filtros",
+      "ariaLabel": "",
+      "title": "",
+      "type": "button",
+      "disabled": false
+    }
+  ],
+  "tableHeaders": [
+    "Stituação",
+    "Status",
+    "Numero do processo",
+    "Area",
+    "Tipo de acao",
+    "Responsavel",
+    "Data recebimento",
+    "Data tratado",
+    "Acao"
+  ]
+}

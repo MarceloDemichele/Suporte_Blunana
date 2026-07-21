@@ -1,0 +1,55 @@
+{
+  "capturedAt": "2026-07-15T17:16:47.144Z",
+  "environment": "hml",
+  "menu": "Home",
+  "path": "/@rocha_juridico_hml/app/home",
+  "secoes": [
+    {
+      "aba": "Tela principal",
+      "estrutura": {
+        "labels": [
+          "Data"
+        ],
+        "fields": [
+          {
+            "tag": "input",
+            "type": "date",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Atualizar",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "7%Pendente93%TratadoRecebidos no dia0Tratados no dia0Total na base50.472Pendentes3.761Tratados46.711Painel Abrir painel",
+            "ariaLabel": "Ir para Processos",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "1%Pendente99%TratadoRecebidas no dia0Tratadas no dia0Total na base68.716Pendentes368Tratadas68.348Painel Abrir painel",
+            "ariaLabel": "Ir para Publicacoes",
+            "title": "",
+            "disabled": false
+          }
+        ],
+        "columns": [
+          "Nome",
+          "Ultima interacao",
+          "Tempo ultima interacao",
+          "Status",
+          "Tempo Logado"
+        ],
+        "messages": []
+      }
+    }
+  ],
+  "modais": []
+}

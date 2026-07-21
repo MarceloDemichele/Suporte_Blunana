@@ -1,0 +1,170 @@
+{
+  "capturedAt": "2026-07-15T17:17:10.235Z",
+  "environment": "hml",
+  "menu": "Audiência",
+  "path": "/@rocha_juridico_hml/app/audiencia",
+  "secoes": [
+    {
+      "aba": "Tela principal",
+      "estrutura": {
+        "labels": [
+          "Status",
+          "Area",
+          "Tipo de acao",
+          "Responsavel",
+          "Codigo do Cliente",
+          "Numero do Processo",
+          "Data audiencia (de)",
+          "Data audiencia (ate)",
+          "Data tratado (de)",
+          "Data tratado (ate)"
+        ],
+        "fields": [
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione a area",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione o tipo de acao",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Selecione o advogado",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "Código do cliente",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "0000000-00.0000.0.00.0000",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Ver todas",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Limpar filtros",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Exportar filtros para Excel",
+            "title": "Exportar filtros para Excel",
+            "disabled": false
+          }
+        ],
+        "columns": [
+          "Status",
+          "Alerta",
+          "Nº Processo",
+          "Data",
+          "Hora",
+          "UF",
+          "Tipo",
+          "Nome da Parte",
+          "Advogado Audiência",
+          "Link/Endereço",
+          "Diário de Bordo",
+          "Subs",
+          "Ação"
+        ],
+        "messages": [
+          "Exibindo 170 de 170 audiencias"
+        ]
+      }
+    }
+  ],
+  "modais": []
+}

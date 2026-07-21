@@ -1,0 +1,114 @@
+{
+  "capturedAt": "2026-07-15T21:03:03.856Z",
+  "environment": "hml",
+  "submitted": false,
+  "resultados": [
+    {
+      "item": "TIPO_ATESTE_NOME",
+      "status": "ok"
+    },
+    {
+      "item": "TIPO_ATESTE_FORMULARIO",
+      "status": "ok",
+      "motivo": "preenchido-sem-submissao"
+    },
+    {
+      "item": "HML_TEST_CLIENT_CONFIG_PRAZO",
+      "status": "ok",
+      "motivo": "predefinido-pela-tela"
+    },
+    {
+      "item": "HML_TEST_CLIENT_AREA",
+      "status": "ok"
+    },
+    {
+      "item": "HML_TEST_ACTION_TYPE",
+      "status": "ok"
+    },
+    {
+      "item": "HML_TEST_DEADLINE_TYPE",
+      "status": "ok"
+    },
+    {
+      "item": "HML_TEST_RESPONSIBLE",
+      "status": "ok"
+    },
+    {
+      "item": "CONFIG_PRAZO_FORMULARIO",
+      "status": "ok",
+      "motivo": "preenchido-sem-submissao"
+    },
+    {
+      "item": "HML_TEST_ATTEST_AREA",
+      "status": "ok"
+    },
+    {
+      "item": "HML_TEST_CLIENT",
+      "status": "ok"
+    },
+    {
+      "item": "USUARIO_NOME",
+      "status": "ok"
+    },
+    {
+      "item": "USUARIO_EMAIL",
+      "status": "ok"
+    },
+    {
+      "item": "HML_TEST_USER_ROLE",
+      "status": "ok"
+    },
+    {
+      "item": "USUARIO_FORMULARIO",
+      "status": "ok",
+      "motivo": "preenchido-sem-submissao"
+    },
+    {
+      "item": "HML_TEST_CLIENT_AREA",
+      "status": "ok"
+    },
+    {
+      "item": "HML_TEST_RESPONSIBLE",
+      "status": "ok"
+    },
+    {
+      "item": "CONFIG_PUBLICACAO_FORMULARIO",
+      "status": "ok",
+      "motivo": "preenchido-sem-submissao"
+    },
+    {
+      "item": "HML_TEST_CLIENT_AREA",
+      "status": "ok"
+    },
+    {
+      "item": "HML_TEST_RESPONSIBLE",
+      "status": "ok"
+    },
+    {
+      "item": "CONFIG_PROCESSOS_FORMULARIO",
+      "status": "ok",
+      "motivo": "preenchido-sem-submissao"
+    },
+    {
+      "item": "PROCESSO_CODIGO_CLIENTE",
+      "status": "ok"
+    },
+    {
+      "item": "PROCESSO_NUMERO",
+      "status": "ok"
+    },
+    {
+      "item": "HML_TEST_CLIENT_AREA",
+      "status": "ok"
+    },
+    {
+      "item": "HML_TEST_ACTION_TYPE",
+      "status": "ok"
+    },
+    {
+      "item": "PROCESSO_FORMULARIO",
+      "status": "ok",
+      "motivo": "preenchido-sem-submissao"
+    }
+  ]
+}

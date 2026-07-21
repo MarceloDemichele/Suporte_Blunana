@@ -1,6 +1,6 @@
 export type AppEnvironment = "dev" | "hml" | "prod";
 
-export const currentEnvironment = (process.env.APP_ENV || "dev") as AppEnvironment;
+export const currentEnvironment = (process.env.APP_ENV || "prod") as AppEnvironment;
 
 export const environment = {
     name: currentEnvironment,

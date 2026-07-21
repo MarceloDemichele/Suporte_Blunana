@@ -1,0 +1,269 @@
+{
+  "capturedAt": "2026-07-15T17:17:12.663Z",
+  "environment": "hml",
+  "menu": "Audiência Mutirão",
+  "path": "/@rocha_juridico_hml/app/audiencia_multirao",
+  "secoes": [
+    {
+      "aba": "Tela principal",
+      "estrutura": {
+        "labels": [
+          "Data da audiência (de)",
+          "Data da audiência (até)",
+          "Hora",
+          "Sijur",
+          "Processo",
+          "CPF",
+          "Audiência efetuada?",
+          "Acordo?"
+        ],
+        "fields": [
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "dd/mm/aaaa",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "time",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "select",
+            "type": "",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "",
+            "disabled": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "",
+            "placeholder": "",
+            "ariaLabel": "Items per page:",
+            "disabled": false
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Limpar filtros",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "Upload audiência",
+            "ariaLabel": "",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Detalhe",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Detalhe",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Detalhe",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Detalhe",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Detalhe",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Detalhe",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Detalhe",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Detalhe",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Detalhe",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Detalhe",
+            "title": "",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "ariaLabel": "Visualizar processo",
+            "title": "",
+            "disabled": false
+          }
+        ],
+        "columns": [
+          "Data da audiência",
+          "Hora",
+          "Sijur",
+          "Parte autora",
+          "CPF",
+          "Audiência efetuada?",
+          "Acordo",
+          "Ação"
+        ],
+        "messages": [
+          "Exibindo 30 de 30 processos"
+        ]
+      }
+    }
+  ],
+  "modais": []
+}

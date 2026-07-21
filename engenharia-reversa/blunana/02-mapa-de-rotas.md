@@ -54,7 +54,7 @@ Fonte principal: `outputs/json/blunana/dev/blunana-telas.json`.
 
 | Rota | Uso | Evidência |
 |---|---|---|
-| `/@rocha_juridico/studio/auth/login` | Tela de login, usada para validar se a autenticação permaneceu na tela de login | `crawler-interface/auth/login.ts`, `knowledge/frontend/rotas-blunana.md` |
+| `/@rocha_juridico/auth/login` | Tela de login PROD, usada para validar se a autenticação permaneceu na tela de login | `.env.prod.example`, `crawler-interface/auth/login.ts`, teste controlado de 2026-07-15 |
 
 ## Observações
 

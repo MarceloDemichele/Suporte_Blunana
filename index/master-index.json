@@ -1,47 +1,259 @@
 {
   "blunana": [
-    "docs/changelog.md",
-    "docs/documentation-agent.md",
-    "docs/reverse-engineering-blunana-prompt.md",
-    "docs/reverse-engineering-prompt.md",
-    "engenharia-reversa/README.md",
-    "engenharia-reversa/blunana/README.md",
-    "engenharia-reversa/blunana/01-visao-geral.md",
-    "prompts/00-master-agent.md",
-    "prompts/03-atualizar-documentacao.md",
-    "prompts/09-engenharia-reversa-blunana-prod.md"
+    "docs\\blunana\\README.md",
+    "docs\\changelog.md",
+    "docs\\escopo-funcional-ativo.md",
+    "docs\\fluxo-funcional-suporte-blunana.md",
+    "docs\\massa-de-teste-hml.md",
+    "docs\\regras-negocio\\juridico-consolidado.md",
+    "docs\\regras-negocio\\processos.md",
+    "docs\\reverse-engineering-blunana-prompt.md",
+    "docs\\reverse-engineering-prompt.md",
+    "docs\\robos\\README.md",
+    ".memory\\contexto.md",
+    ".memory\\decisoes.md",
+    ".memory\\historico.md",
+    "engenharia-reversa\\blunana\\01-visao-geral.md",
+    "engenharia-reversa\\blunana\\02-mapa-de-rotas.md",
+    "engenharia-reversa\\blunana\\03-modulos-funcionais.md",
+    "engenharia-reversa\\blunana\\04-apis-servicos-integracoes.md",
+    "engenharia-reversa\\blunana\\05-catalogo-de-dados-formularios.md",
+    "engenharia-reversa\\blunana\\06-regras-de-negocio.md",
+    "engenharia-reversa\\blunana\\07-cenarios-de-teste-qa.md",
+    "engenharia-reversa\\blunana\\08-arquitetura-tecnica.md",
+    "engenharia-reversa\\blunana\\09-riscos-dividas-tecnicas.md",
+    "engenharia-reversa\\blunana\\10-pontos-a-validar.md",
+    "engenharia-reversa\\blunana\\README.md",
+    "engenharia-reversa\\README.md"
+  ],
+  "robo": [
+    "docs\\blunana\\README.md",
+    "docs\\robos\\README.md",
+    ".memory\\contexto.md",
+    "engenharia-reversa\\blunana\\02-mapa-de-rotas.md",
+    "engenharia-reversa\\blunana\\06-regras-de-negocio.md"
+  ],
+  "cef": [
+    "docs\\regras-negocio\\juridico-consolidado.md",
+    ".memory\\contexto.md"
+  ],
+  "login": [
+    "docs\\changelog.md",
+    "docs\\fluxo-funcional-suporte-blunana.md",
+    ".memory\\contexto.md",
+    "engenharia-reversa\\blunana\\01-visao-geral.md",
+    "engenharia-reversa\\blunana\\02-mapa-de-rotas.md",
+    "engenharia-reversa\\blunana\\03-modulos-funcionais.md",
+    "engenharia-reversa\\blunana\\04-apis-servicos-integracoes.md",
+    "engenharia-reversa\\blunana\\05-catalogo-de-dados-formularios.md",
+    "engenharia-reversa\\blunana\\06-regras-de-negocio.md",
+    "engenharia-reversa\\blunana\\07-cenarios-de-teste-qa.md",
+    "engenharia-reversa\\blunana\\08-arquitetura-tecnica.md",
+    "engenharia-reversa\\blunana\\09-riscos-dividas-tecnicas.md",
+    "engenharia-reversa\\blunana\\10-pontos-a-validar.md",
+    "engenharia-reversa\\blunana\\README.md"
+  ],
+  "mfa": [
+    "docs\\changelog.md",
+    "docs\\fluxo-funcional-suporte-blunana.md",
+    "engenharia-reversa\\blunana\\01-visao-geral.md",
+    "engenharia-reversa\\blunana\\03-modulos-funcionais.md",
+    "engenharia-reversa\\blunana\\04-apis-servicos-integracoes.md",
+    "engenharia-reversa\\blunana\\05-catalogo-de-dados-formularios.md",
+    "engenharia-reversa\\blunana\\06-regras-de-negocio.md",
+    "engenharia-reversa\\blunana\\07-cenarios-de-teste-qa.md",
+    "engenharia-reversa\\blunana\\08-arquitetura-tecnica.md",
+    "engenharia-reversa\\blunana\\09-riscos-dividas-tecnicas.md",
+    "engenharia-reversa\\blunana\\README.md"
+  ],
+  "usuario": [
+    "docs\\changelog.md",
+    "docs\\escopo-funcional-ativo.md",
+    "docs\\fluxo-funcional-suporte-blunana.md",
+    "docs\\massa-de-teste-hml.md",
+    "docs\\regras-negocio\\juridico-consolidado.md",
+    "docs\\regras-negocio\\processos.md",
+    "docs\\reverse-engineering-blunana-prompt.md",
+    "docs\\telas\\hml\\configuracao-do-prazo.md",
+    "docs\\telas\\hml\\configuracao-usuario.md",
+    "docs\\telas\\hml\\home.md",
+    "docs\\telas\\hml\\prazos.md",
+    ".memory\\contexto.md",
+    "engenharia-reversa\\blunana\\01-visao-geral.md",
+    "engenharia-reversa\\blunana\\02-mapa-de-rotas.md",
+    "engenharia-reversa\\blunana\\03-modulos-funcionais.md",
+    "engenharia-reversa\\blunana\\04-apis-servicos-integracoes.md",
+    "engenharia-reversa\\blunana\\05-catalogo-de-dados-formularios.md",
+    "engenharia-reversa\\blunana\\06-regras-de-negocio.md",
+    "engenharia-reversa\\blunana\\07-cenarios-de-teste-qa.md",
+    "engenharia-reversa\\blunana\\08-arquitetura-tecnica.md",
+    "engenharia-reversa\\blunana\\09-riscos-dividas-tecnicas.md",
+    "engenharia-reversa\\blunana\\10-pontos-a-validar.md",
+    "tickets\\bugs\\BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md",
+    "support\\respostas\\RESPOSTA-2026-07-06-empresa-inativa-notificacoes-normativos.md"
+  ],
+  "usuarios": [
+    "docs\\changelog.md",
+    "docs\\massa-de-teste-hml.md",
+    "docs\\regras-negocio\\juridico-consolidado.md",
+    "docs\\telas\\hml\\configuracao-usuario.md",
+    "docs\\telas\\hml\\home.md",
+    "engenharia-reversa\\blunana\\02-mapa-de-rotas.md",
+    "engenharia-reversa\\blunana\\03-modulos-funcionais.md",
+    "engenharia-reversa\\blunana\\05-catalogo-de-dados-formularios.md",
+    "tickets\\bugs\\BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md",
+    "support\\respostas\\RESPOSTA-2026-07-06-empresa-inativa-notificacoes-normativos.md"
+  ],
+  "empresa": [
+    ".memory\\clientes.md",
+    ".memory\\contexto.md",
+    ".memory\\historico.md",
+    "tickets\\bugs\\BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md",
+    "support\\respostas\\RESPOSTA-2026-07-06-empresa-inativa-notificacoes-normativos.md"
+  ],
+  "empresas": [
+    "tickets\\bugs\\BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md",
+    "support\\respostas\\RESPOSTA-2026-07-06-empresa-inativa-notificacoes-normativos.md"
+  ],
+  "notificacao": [
+    "docs\\massa-de-teste-hml.md",
+    "tickets\\bugs\\BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md",
+    "support\\respostas\\RESPOSTA-2026-07-06-empresa-inativa-notificacoes-normativos.md"
+  ],
+  "notificacoes": [
+    ".memory\\contexto.md",
+    ".memory\\historico.md",
+    "tickets\\bugs\\BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md",
+    "support\\respostas\\RESPOSTA-2026-07-06-empresa-inativa-notificacoes-normativos.md"
+  ],
+  "normativo": [
+    ".memory\\contexto.md",
+    ".memory\\historico.md",
+    "tickets\\bugs\\BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md",
+    "support\\respostas\\RESPOSTA-2026-07-06-empresa-inativa-notificacoes-normativos.md"
+  ],
+  "normativos": [
+    ".memory\\contexto.md",
+    ".memory\\historico.md",
+    "tickets\\bugs\\BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md",
+    "support\\respostas\\RESPOSTA-2026-07-06-empresa-inativa-notificacoes-normativos.md"
+  ],
+  "publicacao": [
+    "docs\\changelog.md",
+    "docs\\escopo-funcional-ativo.md",
+    "docs\\massa-de-teste-hml.md",
+    "docs\\regras-negocio\\detalhes-do-processo.md",
+    "docs\\regras-negocio\\juridico-consolidado.md",
+    "docs\\regras-negocio\\publicacoes.md",
+    "docs\\telas\\hml\\configuracao-de-publicacao.md",
+    "docs\\telas\\hml\\publicacoes.md",
+    "engenharia-reversa\\blunana\\03-modulos-funcionais.md"
+  ],
+  "publicacoes": [
+    "docs\\changelog.md",
+    "docs\\escopo-funcional-ativo.md",
+    "docs\\regras-negocio\\detalhes-do-processo.md",
+    "docs\\regras-negocio\\juridico-consolidado.md",
+    "docs\\regras-negocio\\publicacoes.md",
+    "docs\\telas\\hml\\configuracao-de-publicacao.md",
+    "docs\\telas\\hml\\home.md",
+    "docs\\telas\\hml\\publicacoes.md",
+    "engenharia-reversa\\blunana\\02-mapa-de-rotas.md",
+    "engenharia-reversa\\blunana\\03-modulos-funcionais.md",
+    "engenharia-reversa\\blunana\\05-catalogo-de-dados-formularios.md",
+    "engenharia-reversa\\blunana\\06-regras-de-negocio.md",
+    "engenharia-reversa\\blunana\\10-pontos-a-validar.md"
+  ],
+  "tarefa": [
+    "docs\\contrato-api-agente-externo.md",
+    "docs\\telas\\hml\\agenda-de-prazos.md",
+    ".memory\\contexto.md",
+    "engenharia-reversa\\blunana\\02-mapa-de-rotas.md",
+    "engenharia-reversa\\blunana\\03-modulos-funcionais.md",
+    "engenharia-reversa\\blunana\\10-pontos-a-validar.md",
+    "engenharia-reversa\\blunana\\README.md"
+  ],
+  "tarefas": [
+    "docs\\telas\\hml\\agenda-de-prazos.md",
+    "engenharia-reversa\\blunana\\02-mapa-de-rotas.md",
+    "engenharia-reversa\\blunana\\03-modulos-funcionais.md"
+  ],
+  "cliente": [
+    "docs\\changelog.md",
+    "docs\\contrato-api-agente-externo.md",
+    "docs\\escopo-funcional-ativo.md",
+    "docs\\fluxo-funcional-suporte-blunana.md",
+    "docs\\massa-de-teste-hml.md",
+    "docs\\regras-negocio\\detalhes-do-processo.md",
+    "docs\\regras-negocio\\juridico-consolidado.md",
+    "docs\\regras-negocio\\publicacoes.md",
+    "docs\\telas\\hml\\agenda-de-prazos.md",
+    "docs\\telas\\hml\\audiencia.md",
+    "docs\\telas\\hml\\configuracao-de-processos.md",
+    "docs\\telas\\hml\\configuracao-de-publicacao.md",
+    "docs\\telas\\hml\\configuracao-do-prazo.md",
+    "docs\\telas\\hml\\configuracao-usuario.md",
+    "docs\\telas\\hml\\prazos.md",
+    "docs\\telas\\hml\\processos.md",
+    "docs\\telas\\hml\\publicacoes.md",
+    ".memory\\clientes.md",
+    ".memory\\decisoes.md",
+    "tickets\\bugs\\BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md",
+    "support\\respostas\\RESPOSTA-2026-07-06-empresa-inativa-notificacoes-normativos.md"
   ],
   "suporte": [
-    "README.md",
-    "AGENTS.md",
-    "docs/changelog.md",
-    "docs/documentation-agent.md",
-    "external-agent/README.md",
-    "external-agent/api/controllers/assistant.controller.ts",
-    "prompts/00-master-agent.md",
-    "prompts/03-atualizar-documentacao.md",
-    "support/respostas/RESPOSTA-2026-07-06-empresa-inativa-notificacoes-normativos.md"
+    "docs\\changelog.md",
+    "docs\\contrato-api-agente-externo.md",
+    "docs\\escopo-funcional-ativo.md",
+    "docs\\fluxo-funcional-suporte-blunana.md",
+    "docs\\massa-de-teste-hml.md",
+    "docs\\regras-negocio\\detalhes-do-processo.md",
+    "docs\\regras-negocio\\juridico-consolidado.md",
+    "docs\\regras-negocio\\processos.md",
+    "docs\\regras-negocio\\publicacoes.md",
+    "docs\\reverse-engineering-prompt.md",
+    "docs\\telas\\hml\\configuracao-do-ateste.md",
+    "docs\\telas\\hml\\processos.md",
+    ".memory\\decisoes.md",
+    ".memory\\historico.md"
   ],
-  "documentacao": [
-    "docs/changelog.md",
-    "docs/documentation-agent.md",
-    "docs/reverse-engineering-prompt.md",
-    "docs/reverse-engineering-blunana-prompt.md",
-    "engenharia-reversa/README.md",
-    "engenharia-reversa/blunana/README.md"
+  "erro": [
+    "docs\\contrato-api-agente-externo.md",
+    "docs\\fluxo-funcional-suporte-blunana.md",
+    "docs\\reverse-engineering-blunana-prompt.md",
+    ".memory\\padroes.md",
+    "engenharia-reversa\\blunana\\02-mapa-de-rotas.md",
+    "engenharia-reversa\\blunana\\03-modulos-funcionais.md",
+    "engenharia-reversa\\blunana\\04-apis-servicos-integracoes.md",
+    "engenharia-reversa\\blunana\\05-catalogo-de-dados-formularios.md",
+    "engenharia-reversa\\blunana\\06-regras-de-negocio.md",
+    "engenharia-reversa\\blunana\\07-cenarios-de-teste-qa.md"
   ],
-  "knowledge": [
-    "knowledge/README.md",
-    "knowledge/faq/operacional.md",
-    "knowledge/cliente/resumo-atendimento.md",
-    "knowledge/frontend/rotas-blunana.md"
+  "bug": [
+    "docs\\changelog.md",
+    "docs\\contrato-api-agente-externo.md",
+    "docs\\fluxo-funcional-suporte-blunana.md",
+    "engenharia-reversa\\blunana\\04-apis-servicos-integracoes.md",
+    "engenharia-reversa\\blunana\\06-regras-de-negocio.md",
+    "engenharia-reversa\\blunana\\07-cenarios-de-teste-qa.md",
+    "tickets\\bugs\\BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md",
+    "support\\respostas\\RESPOSTA-2026-07-06-empresa-inativa-notificacoes-normativos.md"
   ],
-  "tickets": [
-    "tickets/bugs/BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md"
+  "permissao": [
+    "docs\\regras-negocio\\juridico-consolidado.md",
+    "docs\\reverse-engineering-blunana-prompt.md",
+    "docs\\telas\\hml\\prazos.md"
   ],
-  "outputs": [
-    "outputs/relatorios/aprendizado.md",
-    "outputs/relatorios/knowledge-update.md",
-    "outputs/relatorios/inventario-projeto.md"
+  "perfil": [
+    "docs\\changelog.md",
+    "docs\\fluxo-funcional-suporte-blunana.md",
+    "docs\\regras-negocio\\juridico-consolidado.md",
+    "docs\\reverse-engineering-blunana-prompt.md",
+    "engenharia-reversa\\blunana\\03-modulos-funcionais.md",
+    "engenharia-reversa\\blunana\\06-regras-de-negocio.md",
+    "engenharia-reversa\\blunana\\07-cenarios-de-teste-qa.md",
+    "engenharia-reversa\\blunana\\10-pontos-a-validar.md",
+    "engenharia-reversa\\blunana\\README.md",
+    "tickets\\bugs\\BUG-2026-07-06-empresa-inativa-notificacoes-normativos.md"
   ]
 }

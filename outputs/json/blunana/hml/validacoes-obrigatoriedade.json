@@ -1,0 +1,118 @@
+{
+  "capturedAt": "2026-07-15T19:08:52.196Z",
+  "resultados": [
+    {
+      "nome": "Tipo de Ateste",
+      "salvarDesabilitado": false,
+      "permaneceuAberto": true,
+      "mensagens": [],
+      "posts": []
+    },
+    {
+      "nome": "Regra de Ateste",
+      "salvarDesabilitado": false,
+      "permaneceuAberto": true,
+      "mensagens": [
+        "Selecione uma area de ateste.",
+        "A regra sera criada com Ativo = true por padrao."
+      ],
+      "posts": [
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/get_area_ateste"
+        }
+      ]
+    },
+    {
+      "nome": "Usuario",
+      "salvarDesabilitado": true,
+      "permaneceuAberto": true,
+      "mensagens": [
+        "0 / 255"
+      ],
+      "posts": []
+    },
+    {
+      "nome": "Configuracao de Publicacao",
+      "salvarDesabilitado": true,
+      "permaneceuAberto": true,
+      "mensagens": [],
+      "posts": [
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/get_cliente_area"
+        },
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/get_tipo_acao"
+        },
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/consulta_equipe"
+        }
+      ]
+    },
+    {
+      "nome": "Configuracao do Prazo",
+      "salvarDesabilitado": true,
+      "permaneceuAberto": true,
+      "mensagens": [],
+      "posts": [
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/get_cliente_area"
+        },
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/consulta_equipe"
+        },
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/get_tipo_acao"
+        },
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/tipo_prazo"
+        }
+      ]
+    },
+    {
+      "nome": "Configuracao de Processos",
+      "salvarDesabilitado": true,
+      "permaneceuAberto": true,
+      "mensagens": [],
+      "posts": [
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/get_cliente_area"
+        },
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/consulta_equipe"
+        },
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/get_tipo_acao"
+        }
+      ]
+    },
+    {
+      "nome": "Processo",
+      "salvarDesabilitado": false,
+      "permaneceuAberto": true,
+      "mensagens": [
+        "Preencha os campos obrigatorios destacados para continuar.",
+        "Codigo do Cliente e obrigatorio.",
+        "Numero do Processo e obrigatorio.",
+        "Area e obrigatoria.",
+        "Tipo de Acao e obrigatorio."
+      ],
+      "posts": [
+        {
+          "status": 200,
+          "path": "/rocha_juridico_hml/api/run/call/get_tipo_acao"
+        }
+      ]
+    }
+  ]
+}
